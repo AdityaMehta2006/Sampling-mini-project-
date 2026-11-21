@@ -8,14 +8,14 @@
 # automatically when the raw export is not available.
 # =============================================================================
 scripts <- c(
-  "00_data_verification.R", # Member 1: export + check against official MoSPI figures
-  "01_srs.R", # Member 1: frame, sample size, SRSWOR / SRSWR
-  "02_stratified.R", # Member 2: stratified sampling
-  "03_systematic.R", # Member 3: systematic sampling
-  "04_cluster.R", # Member 4: cluster sampling
-  "05_comparison.R", # Member 5: comparison, F-tests, simulation
+  "00_data_verification.R", # export + check against official MoSPI figures
+  "01_srs.R", # frame, sample size, SRSWOR / SRSWR
+  "02_stratified.R", # stratified sampling
+  "03_systematic.R", # systematic sampling
+  "04_cluster.R", # cluster sampling
+  "05_comparison.R", # comparison, F-tests, simulation
   "06_slides.R", # presentation built from the verified results
-  "07_member_reports.R" # one PDF report per member (needs pdflatex, Chrome, qpdf)
+  "07_reports.R" # one PDF report per person (needs pdflatex, Chrome, qpdf)
 )
 
 for (s in scripts) {

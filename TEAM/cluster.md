@@ -1,4 +1,4 @@
-# Member 4: Cluster sampling (and the errors section)
+# Abhinaba Das (2440203) — Cluster sampling (and the errors section)
 
 **Read your results in:** [output/04_cluster/04_cluster.pdf](../output/04_cluster/04_cluster.pdf)
 **Your code:** [analysis/04_cluster.R](../analysis/04_cluster.R) and the Unit 4 section of [analysis/designs.R](../analysis/designs.R)
@@ -125,14 +125,14 @@ A: No for workers (very skewed), but with 2.9 million units the F-test is robust
 
 ## 8. Draft for the report: Sampling and non-sampling errors
 
-**Sampling errors.** These arise because we observe a sample, not the whole population. We measured them with standard errors and confidence intervals for every design. In this project they are unusually large for the mean number of workers, because the distribution is extremely skewed (median 1, maximum 14,160, coefficient of variation 10.8). A sample's result depends heavily on whether it happens to include one of the rare very large establishments. Member 5's simulation shows only about 60% of the 95% CIs for the mean contain the true value, while about 95% do for the proportion. Sampling error falls as n grows, and better designs (Neyman stratification, systematic sampling on an ordered list) reduce it.
+**Sampling errors.** These arise because we observe a sample, not the whole population. We measured them with standard errors and confidence intervals for every design. In this project they are unusually large for the mean number of workers, because the distribution is extremely skewed (median 1, maximum 14,160, coefficient of variation 10.8). A sample's result depends heavily on whether it happens to include one of the rare very large establishments. Akash Kumar's simulation shows only about 60% of the 95% CIs for the mean contain the true value, while about 95% do for the proportion. Sampling error falls as n grows, and better designs (Neyman stratification, systematic sampling on an ordered list) reduce it.
 
 **Non-sampling errors.** These would remain even with a complete census.
 
 1. **Frame and coverage errors.** The Economic Census excludes crop production, plantation, public administration, defence and compulsory social security (MoSPI, EC6 documentation), so those establishments are not in our population. Establishments without a fixed structure (street vendors, mobile and seasonal units) are easily missed during listing. The frame dates from 2013; businesses opened or closed since then make it out of date for a survey today.
-2. **Recording (measurement) errors.** Seven single-owner establishments report 10,000 or more workers, six of them exactly 10,001 or 10,002, a pattern typical of a data-entry code (Member 1, Tables 1.3-1.4). They change the SD from 21.5 to 26.8. We kept the official values but flag them as probable errors.
+2. **Recording (measurement) errors.** Seven single-owner establishments report 10,000 or more workers, six of them exactly 10,001 or 10,002, a pattern typical of a data-entry code (see K Suraj Das's report, Tables 1.3-1.4). They change the SD from 21.5 to 26.8. We kept the official values but flag them as probable errors.
 3. **Definition and classification issues.** "Owner's sex" exists only for proprietary establishments: 315,170 government, company, partnership and other establishments (10.9%) have no owner's sex and count as "not female-owned". 13,559 have "others". Activity codes (NIC) depend on the enumerator's judgement and can be misclassified.
 4. **Non-response.** The census was collected face to face. Closed premises or refusals would be missing or recorded by proxy. The public dataset does not report non-response rates, so we cannot measure this. In our own project there is no non-response, because we sample from the completed census records.
-5. **Processing errors.** We converted MoSPI's Nesstar file ourselves. We ruled out errors here by checking all 67 official summary figures; every one matched (Member 1, Table 0.1).
+5. **Processing errors.** We converted MoSPI's Nesstar file ourselves. We ruled out errors here by checking all 67 official summary figures; every one matched (see K Suraj Das's report, Table 0.1).
 
 **Conclusion.** For this project the biggest error sources are the skewness (a sampling issue that inflates variance) and a few probable recording errors (a non-sampling issue that no sampling design can correct).

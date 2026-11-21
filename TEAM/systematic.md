@@ -1,4 +1,4 @@
-# Member 3: Systematic sampling (and presenting the charts)
+# Aditya Mehta (2440204) — Systematic sampling (and presenting the charts)
 
 **Read your results in:** [output/03_systematic/03_systematic.pdf](../output/03_systematic/03_systematic.pdf)
 **Your code:** [analysis/03_systematic.R](../analysis/03_systematic.R) and the Unit 3 section of [analysis/designs.R](../analysis/designs.R)
@@ -64,7 +64,7 @@ S²_wsy = variance *within* the systematic samples (the ANOVA's MSW).
 ## 5. The key explanations (learn these)
 
 **(a) Why is systematic better than SRS for the proportion (RE 1.12)?**
-The list is ordered by location. Taking every 3,851st unit spreads the sample evenly over all 30 districts, their towns and villages. That works like a very fine stratification by location ("implicit stratification"), much finer than Member 2's 4 divisions. Female ownership differs by place, so this helps.
+The list is ordered by location. Taking every 3,851st unit spreads the sample evenly over all 30 districts, their towns and villages. That works like a very fine stratification by location ("implicit stratification"), much finer than Rithesh K R's 4 divisions. Female ownership differs by place, so this helps.
 
 **(b) Why is it no better for the mean (RE 1.01)?**
 The big problem for the mean is a few giant establishments. They are scattered all over the list, so walking through the list neither helps nor hurts.

@@ -1,5 +1,5 @@
 # =============================================================================
-# 00_data_verification.R — MEMBER 1: export the data and prove nothing was lost
+# 00_data_verification.R — export the data and prove nothing was lost
 #
 # Step 1  Export Karnataka (dataset 62 of the official MoSPI Nesstar file) to CSV
 #         with the open-source R package nesstarR.
@@ -11,7 +11,7 @@
 # Output: output/00_data_verification/README.md
 # =============================================================================
 source("analysis/common.R")
-report_open("00_data_verification", "Data export and verification")
+report_open("00_data_verification", paste0("Data export and verification (", TEAM$name[1], ")"))
 
 DVD <- "dataset_archives/DVD_EC_6th_ECONOMIC_CENSUS_2012_v3_lud_23june2016/survey0"
 NESSTAR <- file.path(DVD, "data/EC_2012_13_6TH_ECONOMIC_CENSUS.Nesstar")

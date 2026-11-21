@@ -1,5 +1,5 @@
 # =============================================================================
-# 04_cluster.R — MEMBER 4: single-stage cluster sampling
+# 04_cluster.R — single-stage cluster sampling
 #
 # Part A  Clusters = enumeration blocks; how many to sample
 # Part B  The selected clusters and the estimates (ratio and unbiased estimators)
@@ -11,7 +11,7 @@
 # =============================================================================
 source("analysis/common.R")
 source("analysis/designs.R")
-report_open("04_cluster", "Unit 4: Cluster sampling (Member 4)")
+report_open("04_cluster", paste0("Unit 4: Cluster sampling (", TEAM$name[4], ")"))
 
 frame <- load_frame()
 pp <- load_shared("population")

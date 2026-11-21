@@ -1,4 +1,4 @@
-# Member 1: SRSWOR, SRSWR, sample size, data cleaning and frame
+# K Suraj Das (2440224) — SRSWOR, SRSWR, sample size, data cleaning and frame
 
 **Read your results in:** [output/01_srs/01_srs.pdf](../output/01_srs/01_srs.pdf) and [output/00_data_verification/00_data_verification.pdf](../output/00_data_verification/00_data_verification.pdf)
 **Your code:** [analysis/00_data_verification.R](../analysis/00_data_verification.R), [analysis/01_srs.R](../analysis/01_srs.R), and the Unit 1 section of [analysis/designs.R](../analysis/designs.R)
@@ -117,5 +117,5 @@ A: The SE would fall by a factor of sqrt(2), about 29% smaller, because SE is pr
 ## 8. Limitations to mention
 
 - P in the sample-size formula came from the census itself; normally it comes from a past survey or pilot.
-- For such skewed data, the normal-based CI for the mean is often wrong: Member 5's simulation shows only about 60% of them contain the true value.
+- For such skewed data, the normal-based CI for the mean is often wrong: Akash Kumar's simulation shows only about 60% of them contain the true value.
 - The suspicious large values (Table 1.3) are a non-sampling error that sampling cannot fix.

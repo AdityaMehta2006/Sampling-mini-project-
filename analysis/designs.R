@@ -1,9 +1,9 @@
 # =============================================================================
 # designs.R — the estimators of every sampling design, in ONE place
 #
-# Each member owns one section. The member's own script (01-04) calls these
-# functions once to draw "the" sample; script 05 calls them 500 times for the
-# Monte Carlo simulation, so every number comes from the same formulas.
+# One section per design. Scripts 01-04 call these functions once to draw "the"
+# sample; script 05 calls them 500 times for the Monte Carlo simulation, so every
+# number comes from the same formulas.
 #
 # Notation (Cochran; Gupta & Kapoor):
 #   N, n       population and sample size          f = n / N  (sampling fraction)
@@ -14,7 +14,7 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# UNIT 1 — SRSWOR and SRSWR                                         (MEMBER 1)
+# UNIT 1 — SRSWOR and SRSWR
 # -----------------------------------------------------------------------------
 # Exact variances (from the population):
 #   SRSWOR:  V(ybar) = (1 - f) S^2 / n                   V(p) = (N - n) / (N - 1) * PQ / n
@@ -53,7 +53,7 @@ est_srswr <- function(fr, n, pp, idx = sample.int(nrow(fr), n, replace = TRUE)) 
 }
 
 # -----------------------------------------------------------------------------
-# UNIT 2 — STRATIFIED RANDOM SAMPLING                               (MEMBER 2)
+# UNIT 2 — STRATIFIED RANDOM SAMPLING
 # -----------------------------------------------------------------------------
 # Summary of every stratum h: N_h, W_h = N_h / N, Ybar_h, S_h, P_h (+ its units).
 strata_info <- function(fr, col) {
@@ -114,7 +114,7 @@ est_stratified <- function(fr, info, nh, pp, label) {
 }
 
 # -----------------------------------------------------------------------------
-# UNIT 3 — LINEAR SYSTEMATIC SAMPLING (N = n k)                     (MEMBER 3)
+# UNIT 3 — LINEAR SYSTEMATIC SAMPLING (N = n k)
 # -----------------------------------------------------------------------------
 # With N = n k, unit number i belongs to systematic sample r = ((i - 1) mod k) + 1.
 # Putting y into a k x n matrix (filled column by column) puts sample r in row r.
@@ -146,7 +146,7 @@ est_systematic <- function(fr, k, r, pp, v_true_mean = NA, v_true_p = NA) {
 }
 
 # -----------------------------------------------------------------------------
-# UNIT 4 — SINGLE-STAGE CLUSTER SAMPLING                            (MEMBER 4)
+# UNIT 4 — SINGLE-STAGE CLUSTER SAMPLING
 # -----------------------------------------------------------------------------
 # Clusters = enumeration blocks. For each cluster i: size M_i, total y_i of the
 # study variable, and a_i = number of female-owned establishments.

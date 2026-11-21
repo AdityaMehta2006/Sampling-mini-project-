@@ -1,5 +1,5 @@
 # =============================================================================
-# 05_comparison.R — MEMBER 5: comparison of designs, F-tests, simulation
+# 05_comparison.R — comparison of designs, F-tests, simulation
 #
 # Part A  Master comparison table: every design, estimate, SE, CI, RE, error
 # Part B  F-tests comparing the variances of two designs
@@ -9,7 +9,7 @@
 # =============================================================================
 source("analysis/common.R")
 source("analysis/designs.R")
-report_open("05_comparison", "Comparison of designs, F-tests and simulation (Member 5)")
+report_open("05_comparison", paste0("Comparison of designs, F-tests and simulation (", TEAM$name[5], ")"))
 
 frame <- load_frame()
 pp <- load_shared("population")

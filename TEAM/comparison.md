@@ -1,4 +1,4 @@
-# Member 5: Comparison of designs, F-tests, simulation, official statistics, report compilation
+# Akash Kumar (2440206) — Comparison of designs, F-tests, simulation, official statistics, report compilation
 
 **Read your results in:** [output/05_comparison/05_comparison.pdf](../output/05_comparison/05_comparison.pdf)
 **Your code:** [analysis/05_comparison.R](../analysis/05_comparison.R)
@@ -21,7 +21,7 @@
 
 ## 2. What you did, step by step
 
-1. **Collected** the one sample from every design (Members 1-4) into one master table.
+1. **Collected** the one sample from every design (the other four parts) into one master table.
 2. **Compared precision** using the exact variances: RE = V(SRSWOR) / V(design).
 3. **F-tests:** compared SRS with stratified (Neyman), systematic and cluster, first using the single samples, then using 500 repeated samples.
 4. **Simulation:** repeated every design 500 times to see the bias, the real spread of the estimates, and how often the 95% CIs contain the truth.
@@ -86,7 +86,7 @@ The F-test assumes normal data. The mean's estimates are strongly right-skewed (
 
 > "Table 5.1 compares all six designs on the same population with about 748 establishments each. For the proportion, systematic sampling is most efficient, 12% better than SRS; for the mean, Neyman stratification is best, 17% better. Cluster sampling is far worse, with an RE of only 0.04 for the proportion, because businesses in the same block are alike. Our 500-repeat simulation confirms the variance formulas for the proportion, and every F-test agrees. For the mean the estimates are so skewed that the F-test's normality assumption fails, and one test even points the wrong way. We recommend systematic sampling from the location-ordered census list: precise, cheap and simple."
 
-Show **Table 5.1** and **Figure 5.2** (Member 3 presents Figures 5.1-5.4 with you).
+Show **Table 5.1** and **Figure 5.2** (Aditya Mehta presents Figures 5.1-5.4 with you).
 
 ## 7. Viva questions and answers
 
@@ -139,7 +139,7 @@ A: Neyman-allocated stratified sampling (RE 1.17). Even better would be strata b
 **8.7 Limitations.**
 - **Excluded activities:** crop production, plantation, public administration, defence and compulsory social security.
 - **Under-coverage of informal units:** businesses without a fixed structure, home-based work and seasonal units are easy to miss.
-- **Recording errors:** e.g. the single-owner establishments reporting exactly 10,001 workers (Member 1, Table 1.3).
+- **Recording errors:** e.g. the single-owner establishments reporting exactly 10,001 workers (see K Suraj Das's report, Table 1.3).
 - **Self-reported information** on workers, with no verification against records.
 - **Timeliness:** the frame ages quickly, because small businesses open and close often, so it needs regular updating.
 

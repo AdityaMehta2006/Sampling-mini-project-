@@ -1,28 +1,28 @@
 # Team guide — start here
 
-Each member has one note in this folder. Read this page first, then your own note.
+Each person has one note in this folder. Read this page first, then your own note.
 
-| Member | Method (syllabus unit) | Also responsible for | Your note | Your results |
-|---|---|---|---|---|
-| 1 | SRSWOR and SRSWR (Unit 1) | Data export and checks, sampling frame, sample size | [member1_srs.md](member1_srs.md) | [output/00_data_verification](../output/00_data_verification/README.md), [output/01_srs](../output/01_srs/README.md) |
-| 2 | Stratified sampling (Unit 2) | Allocation comparison, stratified ANOVA | [member2_stratified.md](member2_stratified.md) | [output/02_stratified](../output/02_stratified/README.md) |
-| 3 | Systematic sampling (Unit 3) | Systematic ANOVA, effect of k, presenting the charts | [member3_systematic.md](member3_systematic.md) | [output/03_systematic](../output/03_systematic/README.md) |
-| 4 | Cluster sampling (Unit 4) | ICC and efficiency, sampling and non-sampling errors | [member4_cluster.md](member4_cluster.md) | [output/04_cluster](../output/04_cluster/README.md) |
-| 5 | Comparison of designs | F-tests, simulation, official statistics link, report compilation | [member5_comparison.md](member5_comparison.md) | [output/05_comparison](../output/05_comparison/README.md) |
+| Name | Register No. | Method (syllabus unit) | Also responsible for | Your note | Your results |
+|---|---|---|---|---|---|
+| K Suraj Das | 2440224 | SRSWOR and SRSWR (Unit 1) | Data export and checks, sampling frame, sample size | [srs.md](srs.md) | [output/00_data_verification](../output/00_data_verification/README.md), [output/01_srs](../output/01_srs/README.md) |
+| Rithesh K R | 2440233 | Stratified sampling (Unit 2) | Allocation comparison, stratified ANOVA | [stratified.md](stratified.md) | [output/02_stratified](../output/02_stratified/README.md) |
+| Aditya Mehta | 2440204 | Systematic sampling (Unit 3) | Systematic ANOVA, effect of k, presenting the charts | [systematic.md](systematic.md) | [output/03_systematic](../output/03_systematic/README.md) |
+| Abhinaba Das | 2440203 | Cluster sampling (Unit 4) | ICC and efficiency, sampling and non-sampling errors | [cluster.md](cluster.md) | [output/04_cluster](../output/04_cluster/README.md) |
+| Akash Kumar | 2440206 | Comparison of designs | F-tests, simulation, official statistics link, report compilation | [comparison.md](comparison.md) | [output/05_comparison](../output/05_comparison/README.md) |
 
 ## Your individual report
 
 Download your PDF from [reports/](../reports):
 
-| Member | Report |
+| Name | Report |
 |---|---|
-| 1 | [Member1_SRSWOR_SRSWR.pdf](../reports/Member1_SRSWOR_SRSWR.pdf) |
-| 2 | [Member2_Stratified_Sampling.pdf](../reports/Member2_Stratified_Sampling.pdf) |
-| 3 | [Member3_Systematic_Sampling.pdf](../reports/Member3_Systematic_Sampling.pdf) |
-| 4 | [Member4_Cluster_Sampling.pdf](../reports/Member4_Cluster_Sampling.pdf) |
-| 5 | [Member5_Comparison_and_Official_Statistics.pdf](../reports/Member5_Comparison_and_Official_Statistics.pdf) |
+| K Suraj Das | [K_Suraj_Das_2440224.pdf](../reports/K_Suraj_Das_2440224.pdf) |
+| Rithesh K R | [Rithesh_K_R_2440233.pdf](../reports/Rithesh_K_R_2440233.pdf) |
+| Aditya Mehta | [Aditya_Mehta_2440204.pdf](../reports/Aditya_Mehta_2440204.pdf) |
+| Abhinaba Das | [Abhinaba_Das_2440203.pdf](../reports/Abhinaba_Das_2440203.pdf) |
+| Akash Kumar | [Akash_Kumar_2440206.pdf](../reports/Akash_Kumar_2440206.pdf) |
 
-Page 1 already lists all five names. On **page 2**, click the grey boxes and type your **name**, **register number**, and the names in the roles table, using any PDF viewer (Chrome, Edge, Acrobat Reader). Then save or print the PDF.
+Your name and register number are already printed on page 1 (all five names) and page 2 (your own details and the roles table). Nothing needs to be filled in: download your PDF and submit it.
 
 ## The project in five lines
 
@@ -50,9 +50,9 @@ Page 1 already lists all five names. On **page 2**, click the grey boxes and typ
 ## How the files are organised
 
 ```
-analysis/        R code. One script per member, run in numbered order
+analysis/        R code. One script per part, run in numbered order
   common.R       shared settings and helpers (n, seed, tables, figures)
-  designs.R      the estimators of every design - each member owns one section
+  designs.R      the estimators of every design - one section per design
   run_all.R      runs everything (about 2 minutes)
 data/            frame_karnataka.rds - the cleaned sampling frame (all 2.88 million units)
 output/          one folder per script; open README.md inside each folder
@@ -62,35 +62,35 @@ output/          one folder per script; open README.md inside each folder
 TEAM/            these notes
 ```
 
-**To re-run everything:** install R, open a terminal in the project folder, and run `Rscript analysis/run_all.R`. No packages are needed. (Only Member 1's script 00 needs the DVD and the `nesstarR` package; it is skipped automatically if they are missing.)
+**To re-run everything:** install R, open a terminal in the project folder, and run `Rscript analysis/run_all.R`. No packages are needed. (Only script 00, K Suraj Das's data export, needs the DVD and the `nesstarR` package; it is skipped automatically if they are missing.)
 
 **Do not edit files in `output/` by hand.** They are rebuilt every time the scripts run. The seed (2026) is fixed, so everyone gets identical numbers.
 
 ## Fair split of work
 
-Every member has the same structure: a method, a full estimation (mean, total, proportion with SE, CI and fpc), an ANOVA or test, figures, and one "extra" analysis.
+Every part has the same structure: a method, a full estimation (mean, total, proportion with SE, CI and fpc), an ANOVA or test, figures, and one "extra" analysis.
 
-| Member | Tables | Figures | Their "extra" |
+| Name | Tables | Figures | Their "extra" |
 |---|---|---|---|
-| 1 | 9 (incl. verification) | 3 | Proving the data is genuine (67 checks against MoSPI) |
-| 2 | 11 | 3 | Which stratification basis is better (division vs activity) |
-| 3 | 9 | 3 | How the order of the list changes precision |
-| 4 | 8 | 3 | How cluster size changes efficiency (blocks vs wards vs towns) |
-| 5 | 7 | 4 | 500-repeat simulation and CI coverage |
+| K Suraj Das | 9 (incl. verification) | 3 | Proving the data is genuine (67 checks against MoSPI) |
+| Rithesh K R | 11 | 3 | Which stratification basis is better (division vs activity) |
+| Aditya Mehta | 9 | 3 | How the order of the list changes precision |
+| Abhinaba Das | 8 | 3 | How cluster size changes efficiency (blocks vs wards vs towns) |
+| Akash Kumar | 7 | 4 | 500-repeat simulation and CI coverage |
 
-Members 4 and 5 also write report sections (errors and the official statistics link); see their notes.
+Abhinaba and Akash also write report sections (errors and the official statistics link); see their notes.
 
 ## Report and presentation (marks)
 
 | Component | Marks | Who |
 |---|---|---|
-| Survey design: population, frame, strata, clusters, sample size | 5 | Member 1 (Tables 1.2, 1.4) |
-| Own-method estimation: formulas, variance, SE, CI | 10 | Each member, own unit |
-| Own-method interpretation: precision, efficiency, ICC or gain | 5 | Each member, own unit |
-| Comparison table, ANOVA, F-test, charts, recommended design | 8 | Member 5 (tables), all ANOVAs from Members 2-4, charts presented by Member 3 |
-| Conclusion, limitations, sampling and non-sampling errors | 4 | Member 4 (errors), Member 5 (conclusion) |
-| Official statistics link (about 2 pages) | 4 | Member 5 |
-| Report and presentation | 3 + 7 | Everyone; Member 5 compiles |
+| Survey design: population, frame, strata, clusters, sample size | 5 | K Suraj Das (Tables 1.5, 1.7) |
+| Own-method estimation: formulas, variance, SE, CI | 10 | Each person, own unit |
+| Own-method interpretation: precision, efficiency, ICC or gain | 5 | Each person, own unit |
+| Comparison table, ANOVA, F-test, charts, recommended design | 8 | Akash Kumar (tables), ANOVAs from Rithesh K R, Aditya Mehta and Abhinaba Das, charts presented by Aditya Mehta |
+| Conclusion, limitations, sampling and non-sampling errors | 4 | Abhinaba Das (errors), Akash Kumar (conclusion) |
+| Official statistics link (about 2 pages) | 4 | Akash Kumar |
+| Report and presentation | 3 + 7 | Everyone; Akash Kumar compiles |
 | Viva | 4 | Everyone, on their own method |
 
-**Presentation (7-10 minutes):** use [presentation/slides.html](../presentation/slides.html) (open it in a browser: arrow keys to move, **N** for speaker notes, **F** for full screen). A PDF copy is in [presentation/slides.pdf](../presentation/slides.pdf). There are 18 slides: 2 opening slides (Member 1), **3 slides per member**, and a closing slide (Member 5), about 1.5 minutes each. Every number on the slides is filled in automatically from the verified results by `analysis/06_slides.R`, so the slides always match the reports.
+**Presentation (7-10 minutes):** use [presentation/slides.html](../presentation/slides.html) (open it in a browser: arrow keys to move, **N** for speaker notes, **F** for full screen). A PDF copy is in [presentation/slides.pdf](../presentation/slides.pdf). There are 18 slides: 2 opening slides (K Suraj Das), **3 slides per person** in the order of the table above, and a closing slide (Akash Kumar), about 1.5 minutes each. Every number on the slides is filled in automatically from the verified results by `analysis/06_slides.R`, so the slides always match the reports.

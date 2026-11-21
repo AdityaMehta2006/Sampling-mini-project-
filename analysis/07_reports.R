@@ -1,47 +1,39 @@
 # =============================================================================
-# 07_member_reports.R — one report (PDF) per member
+# 07_reports.R — one individual report (PDF) per person
 #
-# Each report = page 1: cover in the department format (5 fillable name /
-# register-number lines) + page 2: student details (fillable name and register
-# number) + the body: introduction, the member's own method (from output/),
-# comparison with the other designs, member-specific chapters, conclusion and
+# Each report = page 1: cover in the department format (the five names and
+# register numbers) + page 2: student details of the person who owns the report
+# + the body: introduction, their own method (from output/),
+# comparison with the other designs, part-specific chapters, conclusion and
 # sources. Numbers come from the verified results (analysis/summary_values.R).
 #
 # Needs: pdflatex (front pages), Google Chrome/Chromium (body), qpdf (merge).
-# Output: reports/MemberN_<method>.pdf
+# Output: reports/<Name>_<Register number>.pdf
 # =============================================================================
 source("analysis/summary_values.R")
 
 for (tool in c("pdflatex", "qpdf")) {
-  if (!nzchar(Sys.which(tool))) stop(tool, " is needed to build the member reports.")
+  if (!nzchar(Sys.which(tool))) stop(tool, " is needed to build the individual reports.")
 }
-if (is.na(find_chrome())) stop("Google Chrome or Chromium is needed to build the member reports.")
+if (is.na(find_chrome())) stop("Google Chrome or Chromium is needed to build the individual reports.")
 
 ROOT <- normalizePath(".")
-BUILD <- file.path(tempdir(), "member_reports")
+BUILD <- file.path(tempdir(), "individual_reports")
 dir.create(BUILD, showWarnings = FALSE)
 dir.create("reports", showWarnings = FALSE)
 
-# The group, printed on every cover as "Name – Register number"
-TEAM_MEMBERS <- data.frame(
-  name = c("Abhinaba Das", "Aditya Mehta", "Akash Kumar", "K Suraj Das", "Rithesh K R"),
-  reg = c("2440203", "2440204", "2440206", "2440224", "2440233")
-)
-# Who takes which member role, where known (pre-fills page 2; still editable in the PDF)
-ROLE_HOLDER <- c("2" = "Rithesh K R")
-
-MEMBERS <- list(
-  list(no = 1, file = "Member1_SRSWOR_SRSWR", method = "SRSWOR and SRSWR, sample size",
+PARTS <- list(
+  list(no = 1, file = "K_Suraj_Das_2440224", method = "SRSWOR and SRSWR, sample size",
        also = "Data cleaning and frame preparation", folders = c("00_data_verification", "01_srs"),
        chapter = "Simple random sampling (SRSWOR and SRSWR)"),
-  list(no = 2, file = "Member2_Stratified_Sampling", method = "Stratified sampling",
+  list(no = 2, file = "Rithesh_K_R_2440233", method = "Stratified sampling",
        also = "Allocation comparison", folders = "02_stratified", chapter = "Stratified random sampling"),
-  list(no = 3, file = "Member3_Systematic_Sampling", method = "Systematic sampling",
+  list(no = 3, file = "Aditya_Mehta_2440204", method = "Systematic sampling",
        also = "Charts and visuals", folders = "03_systematic", chapter = "Systematic sampling"),
-  list(no = 4, file = "Member4_Cluster_Sampling", method = "Cluster sampling",
+  list(no = 4, file = "Abhinaba_Das_2440203", method = "Cluster sampling",
        also = "Intraclass correlation and efficiency; errors", folders = "04_cluster",
        chapter = "Single-stage cluster sampling"),
-  list(no = 5, file = "Member5_Comparison_and_Official_Statistics",
+  list(no = 5, file = "Akash_Kumar_2440206",
        method = "Comparison of designs and official statistics link", also = "Report compilation",
        folders = "05_comparison", chapter = "Comparison of designs, F-tests and simulation")
 )
@@ -101,12 +93,12 @@ intro <- function(m) {
       " of ", v$checks_total, " checks matched**, so the data are genuine and complete. Data source: <", MOSPI_URL, ">."
     ), "",
     "## 1.3 Survey design", "",
-    "**Table 1.A: Survey design used by every member**", "", md_table(design), "",
+    "**Table 1.A: Survey design used in every part**", "", md_table(design), "",
     paste0(
       "The study variable is extremely skewed: the mean is ", v$Ybar, " workers per establishment, the median is ",
       v$median, " and the largest establishment reports ", v$maxY, " workers. The proportion of female-owned ",
       "establishments is P = ", v$P, ". The common sample size n = ", v$n, " gives a margin of error of about ",
-      v$m1_dach, " for P, and ", v$n, " x ", v$k, " = ", v$N, " exactly, as systematic sampling requires."
+      v$srs_dach, " for P, and ", v$n, " x ", v$k, " = ", v$N, " exactly, as systematic sampling requires."
     ), ""
   )
 }
@@ -115,19 +107,19 @@ comparison <- function(m) {
   fig <- paste0("file://", file.path(ROOT, "output/05_comparison/figures/relative_efficiency.png"))
   where <- switch(m$no,
     paste0(
-      "SRSWOR is the benchmark (RE = 1). SRSWR is practically as precise (RE ", v$m1_ratio,
+      "SRSWOR is the benchmark (RE = 1). SRSWR is practically as precise (RE ", v$srs_ratio,
       " in variance terms), because n is a tiny fraction of N."
     ),
     paste0(
-      "Neyman-allocated stratified sampling is the most precise design for the **mean** (RE ", v$m2_re_ney_mean,
-      "), while proportional allocation is no better than SRS (RE ", v$m2_re_prop_mean, ")."
+      "Neyman-allocated stratified sampling is the most precise design for the **mean** (RE ", v$strat_re_ney_mean,
+      "), while proportional allocation is no better than SRS (RE ", v$strat_re_prop_mean, ")."
     ),
     paste0(
-      "Systematic sampling is the most precise design for the **proportion** (RE ", v$m3_re_p,
+      "Systematic sampling is the most precise design for the **proportion** (RE ", v$sys_re_p,
       ") and about as good as SRS for the mean."
     ),
     paste0(
-      "Cluster sampling is the least precise design (RE ", v$m4_re_y, " for the mean and ", v$m4_re_p,
+      "Cluster sampling is the least precise design (RE ", v$clu_re_y, " for the mean and ", v$clu_re_p,
       " for the proportion), the price of its low field cost."
     )
   )
@@ -145,49 +137,50 @@ conclusion <- function(m) {
   txt <- switch(m$no,
     c(
       paste0("- The Karnataka data were exported and verified against ", v$checks_total, " official MoSPI figures."),
-      paste0("- n = ", v$m1_nreq, " estimates P within 3 percentage points; n = ", v$n, " was used so that N = nk."),
-      paste0("- The mean would need ", v$m1_nmean10, " units for 10% precision because the data are very skewed."),
+      paste0("- n = ", v$srs_nreq, " estimates P within 3 percentage points; n = ", v$n, " was used so that N = nk."),
+      paste0("- The mean would need ", v$srs_nmean10, " units for 10% precision because the data are very skewed."),
       paste0(
-        "- SRSWR is only ", v$m1_ratio_pct,
+        "- SRSWR is only ", v$srs_ratio_pct,
         "% less precise than SRSWOR; with n/N this small they are equivalent."
       ),
       paste0(
-        "- ", v$m1_suspect,
+        "- ", v$srs_suspect,
         " single-owner establishments reporting 10,000+ workers are probable recording errors."
       )
     ),
     c(
-      paste0("- The four revenue divisions explain only ", v$m2_share_pct, "% of the variance, so proportional ",
-             "allocation gains nothing for the mean (RE ", v$m2_re_prop_mean, ")."),
-      paste0("- Their standard deviations differ (", v$m2_sd_range, "), so Neyman allocation gains about ",
-             v$m2_gain_ney, "% (RE ", v$m2_re_ney_mean, "), exactly as Cochran's formulas predict."),
-      paste0("- Neyman allocation optimised for the mean is worse for the proportion (RE ", v$m2_re_ney_p,
-             "); an allocation optimised for P gives RE ", v$m2_re_neyP, "."),
-      paste0("- ANOVA on the sample: F = ", v$m2_F, ", p = ", v$m2_p, " (", v$m2_decision, "); Kruskal-Wallis p = ",
-             v$m2_kw_p, " (", v$m2_kw_decision, "). Normality fails (skewness ", v$m2_skew, ")."),
-      paste0("- Activity type would be the better basis for the proportion (RE ", v$m2_act_re_p, ").")
+      paste0("- The four revenue divisions explain only ", v$strat_share_pct, "% of the variance, so proportional ",
+             "allocation gains nothing for the mean (RE ", v$strat_re_prop_mean, ")."),
+      paste0("- Their standard deviations differ (", v$strat_sd_range, "), so Neyman allocation gains about ",
+             v$strat_gain_ney, "% (RE ", v$strat_re_ney_mean, "), exactly as Cochran's formulas predict."),
+      paste0("- Neyman allocation optimised for the mean is worse for the proportion (RE ", v$strat_re_ney_p,
+             "); an allocation optimised for P gives RE ", v$strat_re_neyP, "."),
+      paste0("- ANOVA on the sample: F = ", v$strat_F, ", p = ", v$strat_p, " (", v$strat_decision, "); ",
+             "Kruskal-Wallis p = ", v$strat_kw_p, " (", v$strat_kw_decision, "). ",
+             "Normality fails (skewness ", v$strat_skew, ")."),
+      paste0("- Activity type would be the better basis for the proportion (RE ", v$strat_act_re_p, ").")
     ),
     c(
-      paste0("- With k = ", v$k, " and random start r = ", v$m3_r, ", the estimator is unbiased (checked over all ",
+      paste0("- With k = ", v$k, " and random start r = ", v$sys_r, ", the estimator is unbiased (checked over all ",
              v$k, " starts)."),
-      paste0("- The start does not matter: ANOVA F = ", v$m3_F_mean, " (p = ", v$m3_p_mean, ") for the mean and F = ",
-             v$m3_F_prop, " (p = ", v$m3_p_prop, ") for the proportion; no trend or periodicity."),
-      paste0("- Systematic sampling is ", v$m3_gain_p, "% more efficient than SRS for the proportion (implicit ",
+      paste0("- The start does not matter: ANOVA F = ", v$sys_F_mean, " (p = ", v$sys_p_mean, ") for the mean and F = ",
+             v$sys_F_prop, " (p = ", v$sys_p_prop, ") for the proportion; no trend or periodicity."),
+      paste0("- Systematic sampling is ", v$sys_gain_p, "% more efficient than SRS for the proportion (implicit ",
              "stratification by location) and equal to SRS for the mean."),
       paste0("- The gain disappears on a shuffled list, so the order of the frame is part of the design.")
     ),
     c(
-      paste0("- ", v$n_c, " of ", v$Nc, " enumeration blocks were sampled (about ", v$m4_units, " establishments)."),
-      paste0("- Intraclass correlation: ", v$m4_icc_y, " for workers and ", v$m4_icc_p, " for female ownership."),
-      paste0("- Design effect ", v$m4_deff_a_y, " (mean) and ", v$m4_deff_a_p, " (proportion): RE ", v$m4_re_y,
-             " and ", v$m4_re_p, "."),
+      paste0("- ", v$n_c, " of ", v$Nc, " enumeration blocks were sampled (about ", v$clu_units, " establishments)."),
+      paste0("- Intraclass correlation: ", v$clu_icc_y, " for workers and ", v$clu_icc_p, " for female ownership."),
+      paste0("- Design effect ", v$clu_deff_a_y, " (mean) and ", v$clu_deff_a_p, " (proportion): RE ", v$clu_re_y,
+             " and ", v$clu_re_p, "."),
       "- Larger clusters (wards, towns) are far worse. Cluster sampling is chosen for cost, not precision."
     ),
     c(
-      paste0("- Best design for the proportion: systematic (RE ", v$m5_re_best_p, "); for the mean: Neyman ",
-             "stratified (", v$m5_gain_best_m, "% better than SRS); cluster sampling is the least precise."),
-      paste0("- In 500 repetitions, CIs for P contained the truth ", v$m5_cov_p, "% of the time (cluster ",
-             v$m5_cov_p_cl, "%), but CIs for the mean only ", v$m5_cov_mean, "%."),
+      paste0("- Best design for the proportion: systematic (RE ", v$cmp_re_best_p, "); for the mean: Neyman ",
+             "stratified (", v$cmp_gain_best_m, "% better than SRS); cluster sampling is the least precise."),
+      paste0("- In 500 repetitions, CIs for P contained the truth ", v$cmp_cov_p, "% of the time (cluster ",
+             v$cmp_cov_p_cl, "%), but CIs for the mean only ", v$cmp_cov_mean, "%."),
       paste(
         "- F-tests agree with the exact variances for the proportion;",
         "for the skewed mean the normality assumption fails."
@@ -206,7 +199,7 @@ sources <- function(m, chapter_no) {
     paste0("- Data: Sixth Economic Census 2012-13 microdata, MoSPI, National Data Archive: <", MOSPI_URL, ">"),
     paste0("- Ministry of Statistics and Programme Implementation: <", MOSPI_HOME, ">"),
     paste0("- Code, tables and figures of this project: <", GITHUB_URL, ">"),
-    paste0("- Results of this member's part: ", folder_links),
+    paste0("- Results of this part: ", folder_links),
     paste0("- Export of the Nesstar file: R package nesstarR, <", NESSTARR_URL, ">"), "",
     "## References", "",
     paste(
@@ -242,11 +235,11 @@ build_report <- function(m) {
   }
   if (m$no == 4) {
     body <- c(body, "# Chapter 4: Sampling and non-sampling errors", "",
-      team_section("member4_cluster.md", "## 8."))
+      team_section("cluster.md", "## 8."))
   }
   if (m$no == 5) {
     body <- c(body, "# Chapter 3: Link to India's official statistical system", "",
-      team_section("member5_comparison.md", "## 8."))
+      team_section("comparison.md", "## 8."))
     next_ch <- 4
   }
   body <- c(body, conclusion(m))
@@ -261,15 +254,14 @@ build_report <- function(m) {
   tex <- gsub("@@LOGO@@", file.path(ROOT, "reports/template/christ_logo.png"), tex, fixed = TRUE)
   tex <- gsub("@@METHOD@@", m$method, tex, fixed = TRUE)
   tex <- gsub("@@ALSO@@", m$also, tex, fixed = TRUE)
-  cover <- paste0(TEAM_MEMBERS$name, " -- ", TEAM_MEMBERS$reg, collapse = "\\\\[4pt]\n")
+  by_name <- TEAM[order(TEAM$name), ] # cover lists the group alphabetically
+  cover <- paste0(by_name$name, " -- ", by_name$reg, collapse = "\\\\[4pt]\n")
   tex <- gsub("@@COVER_NAMES@@", cover, tex, fixed = TRUE)
-  holder <- ROLE_HOLDER[as.character(m$no)]
-  holder_reg <- if (is.na(holder)) "" else TEAM_MEMBERS$reg[TEAM_MEMBERS$name == holder]
-  tex <- gsub("@@STUDENT_NAME@@", if (is.na(holder)) "" else holder, tex, fixed = TRUE)
-  tex <- gsub("@@STUDENT_REG@@", holder_reg, tex, fixed = TRUE)
+  tex <- gsub("@@STUDENT_NAME@@", TEAM$name[m$no], tex, fixed = TRUE)
+  tex <- gsub("@@STUDENT_REG@@", TEAM$reg[m$no], tex, fixed = TRUE)
   for (i in 1:5) {
-    who <- ROLE_HOLDER[as.character(i)]
-    tex <- gsub(paste0("@@ROLE_NAME_", i, "@@"), if (is.na(who)) "" else who, tex, fixed = TRUE)
+    tex <- gsub(paste0("@@ROLE_NAME_", i, "@@"), TEAM$name[i], tex, fixed = TRUE)
+    tex <- gsub(paste0("@@ROLE_REG_", i, "@@"), TEAM$reg[i], tex, fixed = TRUE)
   }
   stopifnot(!any(grepl("@@", tex[!startsWith(trimws(tex), "%")])))  # every placeholder filled
   front_tex <- file.path(BUILD, paste0(m$file, "_front.tex"))
@@ -284,4 +276,4 @@ build_report <- function(m) {
   message("Written ", out)
 }
 
-for (m in MEMBERS) build_report(m)
+for (m in PARTS) build_report(m)

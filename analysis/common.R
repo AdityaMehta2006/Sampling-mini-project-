@@ -25,6 +25,14 @@ D_PROP <- 0.03 # required margin of error for P: 3 percentage points
 N_SAMPLE <- 748 # common sample size n (justified in 01_srs.R)
 K_SYS <- 3851 # sampling interval k, since N = n k = 748 x 3851
 
+# The group, in the order of the five parts of the assignment (SRS, stratified,
+# systematic, cluster, comparison)
+TEAM <- data.frame(
+  name = c("K Suraj Das", "Rithesh K R", "Aditya Mehta", "Abhinaba Das", "Akash Kumar"),
+  reg = c("2440224", "2440233", "2440204", "2440203", "2440206"),
+  stringsAsFactors = FALSE
+)
+
 # Sources cited in every report and on the slides
 GITHUB_URL <- "https://github.com/AdityaMehta2006/Sampling-mini-project-"
 MOSPI_URL <- "https://microdata.gov.in/NADA/index.php/catalog/47"

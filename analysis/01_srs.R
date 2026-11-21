@@ -1,5 +1,5 @@
 # =============================================================================
-# 01_srs.R — MEMBER 1: frame preparation, sample size, SRSWOR and SRSWR
+# 01_srs.R — frame preparation, sample size, SRSWOR and SRSWR
 #
 # Part A  Clean the data and build the sampling frame (used by everyone)
 # Part B  True population values (the "ground truth")
@@ -10,7 +10,7 @@
 # =============================================================================
 source("analysis/common.R")
 source("analysis/designs.R")
-report_open("01_srs", "Unit 1: Frame, sample size, SRSWOR and SRSWR (Member 1)")
+report_open("01_srs", paste0("Unit 1: Frame, sample size, SRSWOR and SRSWR (", TEAM$name[1], ")"))
 
 DISTRICT_NAMES <- c(
   "01" = "Belgaum", "02" = "Bagalkot", "03" = "Bijapur", "04" = "Bidar", "05" = "Raichur",
@@ -60,13 +60,13 @@ build_frame <- function() {
     unit_id = seq_len(nrow(raw)), # position in the listed frame, 1..N
     DT = raw$DT,
     district = unname(DISTRICT_NAMES[raw$DT]),
-    division = division, # strata (Member 2)
+    division = division, # strata (Unit 2)
     activity = as.character(cut(as.integer(raw$BACT), c(0, 5, 8, 9, 12, 23),
       labels = c("Primary", "Manufacturing", "Construction", "Trade", "Services")
     )),
     sector = ifelse(raw$SECTOR == "1", "Rural", "Urban"),
     ownership = raw$OWN_SHIP_C,
-    cluster_id = paste(raw$DT, raw$TEH, raw$T_V, raw$WC, raw$EB, sep = "-"), # clusters (Member 4)
+    cluster_id = paste(raw$DT, raw$TEH, raw$T_V, raw$WC, raw$EB, sep = "-"), # clusters (Unit 4)
     Y = num(raw$TOTAL_WORKER), # the numerical variable
     female = as.integer(raw$SEX == "2"), # 1 = female-owned (for the proportion)
     stringsAsFactors = FALSE
@@ -140,7 +140,7 @@ report_text(
 design <- data.frame(
   Element = c(
     "Population", "Sampling unit", "Frame", "Order of the frame (systematic sampling)",
-    "Numerical variable Y", "Proportion P", "Strata (Member 2)", "Clusters (Member 4)", "Sample size"
+    "Numerical variable Y", "Proportion P", "Strata", "Clusters", "Sample size"
   ),
   Definition = c(
     "All establishments in Karnataka, Sixth Economic Census 2012-13",

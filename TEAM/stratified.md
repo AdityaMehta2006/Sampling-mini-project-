@@ -1,4 +1,4 @@
-# Member 2: Stratified random sampling
+# Rithesh K R (2440233) — Stratified random sampling
 
 **Read your results in:** [output/02_stratified/02_stratified.pdf](../output/02_stratified/02_stratified.pdf)
 **Your code:** [analysis/02_stratified.R](../analysis/02_stratified.R) and the Unit 2 section of [analysis/designs.R](../analysis/designs.R)

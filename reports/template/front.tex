@@ -1,9 +1,7 @@
 % =============================================================================
 % front.tex — cover page and student-details page of every member's report.
 % Built by analysis/07_member_reports.R, which replaces the @@...@@ fields
-% (team names come from TEAM_MEMBERS in that script).
-% Grey boxes are fillable PDF form fields: open the PDF in any viewer
-% (Chrome, Edge, Acrobat Reader, Okular...) and type the names in.
+% (names and register numbers come from TEAM in analysis/common.R).
 % =============================================================================
 \documentclass[12pt,a4paper]{article}
 \usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.5cm,right=2.5cm]{geometry}
@@ -15,16 +13,7 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 
-% Fillable fields (the third argument is the pre-filled value, usually empty):
-%   \fillbox{name}{width}{value} has a line underneath; \rolefield{name}{value} sits in the roles table
-\newcommand{\rolefield}[2]{\TextField[name=#1,width=3.7cm,height=12pt,charsize=10pt,
-  borderwidth=0,backgroundcolor={0.95 0.95 0.95},value={#2}]{}}
-\newcommand{\fillbox}[3]{%
-  \underline{\TextField[name=#1,width=#2,height=15pt,charsize=13pt,align=1,
-    borderwidth=0,backgroundcolor={0.95 0.95 0.95},value={#3}]{}}}
-
 \begin{document}
-\begin{Form}
 
 % ------------------------------------------------------------------ page 1
 \begin{center}
@@ -69,8 +58,8 @@ course \textit{Sampling Techniques (STA405-6)}.\par}
 \vspace{0.8cm}
 {\fontsize{14}{22}\selectfont
 \begin{tabular}{@{}p{4.3cm}l@{}}
-Name of the Student & : \fillbox{student_name}{8.2cm}{@@STUDENT_NAME@@}\\[12pt]
-Register Number     & : \fillbox{student_reg}{8.2cm}{@@STUDENT_REG@@}\\[12pt]
+Name of the Student & : @@STUDENT_NAME@@\\[8pt]
+Register Number     & : @@STUDENT_REG@@\\[8pt]
 Role in the group   & : @@METHOD@@\\[6pt]
 Also responsible for & : @@ALSO@@\\[6pt]
 Project Title       & : Design, Estimation and Efficiency Comparison of\\
@@ -82,14 +71,14 @@ Project Title       & : Design, Estimation and Efficiency Comparison of\\
 \vspace{0.3cm}
 {\fontsize{11}{14}\selectfont
 \renewcommand{\arraystretch}{1.35}
-\begin{tabular}{|>{\centering\arraybackslash}m{1.3cm}|>{\raggedright\arraybackslash}m{4.3cm}|>{\raggedright\arraybackslash}m{4.1cm}|>{\centering\arraybackslash}m{4.0cm}|}
+\begin{tabular}{|>{\raggedright\arraybackslash}m{3.1cm}|>{\centering\arraybackslash}m{2.0cm}|>{\raggedright\arraybackslash}m{4.5cm}|>{\raggedright\arraybackslash}m{4.3cm}|}
 \hline
-\textbf{Member} & \textbf{Method} & \textbf{Also responsible for} & \textbf{Name} \\ \hline
-1 & SRSWOR and SRSWR, sample size & Data cleaning and frame preparation & \rolefield{role_name_1}{@@ROLE_NAME_1@@} \\ \hline
-2 & Stratified sampling & Allocation comparison & \rolefield{role_name_2}{@@ROLE_NAME_2@@} \\ \hline
-3 & Systematic sampling & Charts and visuals & \rolefield{role_name_3}{@@ROLE_NAME_3@@} \\ \hline
-4 & Cluster sampling & Intraclass correlation and efficiency; errors & \rolefield{role_name_4}{@@ROLE_NAME_4@@} \\ \hline
-5 & Comparison table and official statistics link & Report compilation & \rolefield{role_name_5}{@@ROLE_NAME_5@@} \\ \hline
+\textbf{Name} & \textbf{Register No.} & \textbf{Method} & \textbf{Also responsible for} \\ \hline
+@@ROLE_NAME_1@@ & @@ROLE_REG_1@@ & SRSWOR and SRSWR, sample size & Data cleaning and frame preparation \\ \hline
+@@ROLE_NAME_2@@ & @@ROLE_REG_2@@ & Stratified sampling & Allocation comparison \\ \hline
+@@ROLE_NAME_3@@ & @@ROLE_REG_3@@ & Systematic sampling & Charts and visuals \\ \hline
+@@ROLE_NAME_4@@ & @@ROLE_REG_4@@ & Cluster sampling & Intraclass correlation and efficiency; errors \\ \hline
+@@ROLE_NAME_5@@ & @@ROLE_REG_5@@ & Comparison table and official statistics link & Report compilation \\ \hline
 \end{tabular}\par}
 
 \vfill
@@ -97,5 +86,4 @@ Project Title       & : Design, Estimation and Efficiency Comparison of\\
 Data (MoSPI, Sixth Economic Census 2012--13): \url{https://microdata.gov.in/NADA/index.php/catalog/47}\\
 Code and results: \url{https://github.com/AdityaMehta2006/Sampling-mini-project-}\par}
 
-\end{Form}
 \end{document}

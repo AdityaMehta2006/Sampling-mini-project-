@@ -1,5 +1,5 @@
 # =============================================================================
-# 03_systematic.R — MEMBER 3: linear systematic sampling (N = n k)
+# 03_systematic.R — linear systematic sampling (N = n k)
 #
 # Part A  Set-up: interval k, random start r, the selected units
 # Part B  Estimates (mean, total, proportion): variance, SE, 95% CI, fpc
@@ -12,7 +12,7 @@
 # =============================================================================
 source("analysis/common.R")
 source("analysis/designs.R")
-report_open("03_systematic", "Unit 3: Systematic sampling (Member 3)")
+report_open("03_systematic", paste0("Unit 3: Systematic sampling (", TEAM$name[3], ")"))
 
 frame <- load_frame()
 pp <- load_shared("population")

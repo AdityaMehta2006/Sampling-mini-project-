@@ -1,5 +1,5 @@
 # =============================================================================
-# 02_stratified.R — MEMBER 2: stratified random sampling
+# 02_stratified.R — stratified random sampling
 #
 # Part A  Strata = Karnataka's 4 revenue divisions; population values per stratum
 # Part B  Proportional vs Neyman allocation of n = 748
@@ -11,7 +11,7 @@
 # =============================================================================
 source("analysis/common.R")
 source("analysis/designs.R")
-report_open("02_stratified", "Unit 2: Stratified random sampling (Member 2)")
+report_open("02_stratified", paste0("Unit 2: Stratified random sampling (", TEAM$name[2], ")"))
 
 frame <- load_frame()
 pp <- load_shared("population")

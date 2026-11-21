@@ -76,13 +76,13 @@
   <h1>Design, Estimation and Efficiency Comparison of Sampling Techniques</h1>
   <p class="sub" style="font-size:24px">All 2,880,548 establishments in Karnataka · Sixth Economic Census 2012-13 (MoSPI)</p>
   <div class="members">
-    <div class="member" style="border-color:var(--m1)"><b>Member 1</b>SRSWOR &amp; SRSWR, sample size, data &amp; frame</div>
-    <div class="member" style="border-color:var(--m2)"><b>Member 2</b>Stratified sampling, allocation comparison</div>
-    <div class="member" style="border-color:var(--m3)"><b>Member 3</b>Systematic sampling, charts &amp; visuals</div>
-    <div class="member" style="border-color:var(--m4)"><b>Member 4</b>Cluster sampling, ICC &amp; efficiency, errors</div>
-    <div class="member" style="border-color:var(--m5)"><b>Member 5</b>Comparison, F-tests, official statistics</div>
+    <div class="member" style="border-color:var(--m1)"><b>K Suraj Das</b>SRSWOR &amp; SRSWR, sample size, data &amp; frame</div>
+    <div class="member" style="border-color:var(--m2)"><b>Rithesh K R</b>Stratified sampling, allocation comparison</div>
+    <div class="member" style="border-color:var(--m3)"><b>Aditya Mehta</b>Systematic sampling, charts &amp; visuals</div>
+    <div class="member" style="border-color:var(--m4)"><b>Abhinaba Das</b>Cluster sampling, ICC &amp; efficiency, errors</div>
+    <div class="member" style="border-color:var(--m5)"><b>Akash Kumar</b>Comparison, F-tests, official statistics</div>
   </div>
-  <div class="notes"><b>Opening (Member 1, 15 s):</b> "Our project compares SRS, stratified, systematic and cluster sampling on real government data: every establishment in Karnataka from the Sixth Economic Census. Each of us will present one method; Member 5 compares them."</div>
+  <div class="notes"><b>Opening (K Suraj Das, 15 s):</b> "Our project compares SRS, stratified, systematic and cluster sampling on real government data: every establishment in Karnataka from the Sixth Economic Census. Each of us will present one method; Akash Kumar compares them."</div>
 </section>
 
 <!-- 2. Overview -->
@@ -111,12 +111,12 @@
     </div>
   </div>
   <div class="src">Data: https://microdata.gov.in/NADA/index.php/catalog/47 (MoSPI, Sixth Economic Census 2012-13) · Code and results: https://github.com/AdityaMehta2006/Sampling-mini-project-</div>
-  <div class="notes"><b>Member 1 (20 s):</b> "Because we have the full census, we know the true values and can measure every design's real error. All designs use n = 748, so the comparison is fair."</div>
+  <div class="notes"><b>K Suraj Das (20 s):</b> "Because we have the full census, we know the true values and can measure every design's real error. All designs use n = 748, so the comparison is fair."</div>
 </section>
 
-<!-- ================= MEMBER 1 ================= -->
+<!-- ================= SRSWOR and SRSWR ================= -->
 <section class="slide">
-  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · Data and frame</span>
+  <span class="tag t-m1" style="align-self:flex-start">K Suraj Das · Unit 1 · Data and frame</span>
   <h2>The data is extremely skewed, and that drives everything</h2>
   <div class="body">
     <div class="col wide"><img src="../output/01_srs/figures/distribution_of_workers.png" alt="Distribution of workers per establishment"><div class="cap">Figure 1.1</div></div>
@@ -135,7 +135,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · Sample size</span>
+  <span class="tag t-m1" style="align-self:flex-start">K Suraj Das · Unit 1 · Sample size</span>
   <h2>n = 748, fixed by the precision required for P</h2>
   <div class="body">
     <div class="col">
@@ -158,7 +158,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · SRSWOR vs SRSWR</span>
+  <span class="tag t-m1" style="align-self:flex-start">K Suraj Das · Unit 1 · SRSWOR vs SRSWR</span>
   <h2>Both CIs contain the truth; the two schemes are practically equal</h2>
   <div class="body">
     <div class="col wide">
@@ -181,9 +181,9 @@
   <div class="notes"><b>Say:</b> "Both confidence intervals contain the true values. The two SEs for the mean differ only because of which establishments each sample happened to include; the exact SE is 0.98 for both. SRSWR is only 0.026% less precise, because n is a tiny fraction of N."</div>
 </section>
 
-<!-- ================= MEMBER 2 ================= -->
+<!-- ================= Stratified sampling ================= -->
 <section class="slide">
-  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · Strata and allocation</span>
+  <span class="tag t-m2" style="align-self:flex-start">Rithesh K R · Unit 2 · Strata and allocation</span>
   <h2>Four revenue divisions: means similar, SDs very different</h2>
   <div class="body">
     <div class="col wide">
@@ -206,7 +206,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · Gain in precision</span>
+  <span class="tag t-m2" style="align-self:flex-start">Rithesh K R · Unit 2 · Gain in precision</span>
   <h2>Neyman gains 17% for the mean; proportional gains nothing</h2>
   <div class="body">
     <div class="col">
@@ -229,7 +229,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · ANOVA and basis of stratification</span>
+  <span class="tag t-m2" style="align-self:flex-start">Rithesh K R · Unit 2 · ANOVA and basis of stratification</span>
   <h2>ANOVA: H<sub>0</sub> all stratum means equal (5% level)</h2>
   <div class="body">
     <div class="col">
@@ -250,9 +250,9 @@
   <div class="notes"><b>Say:</b> "The ANOVA on my sample gives F = 0.377, p = 0.770, so I do not reject H<sub>0</sub>: ANOVA assumes normal data, and a few huge values inflate the within-group variance. The Kruskal-Wallis test, which uses ranks, gives p = 0.0004, so I reject H<sub>0</sub>. As an extra, activity type would be a better basis for the proportion."</div>
 </section>
 
-<!-- ================= MEMBER 3 ================= -->
+<!-- ================= Systematic sampling ================= -->
 <section class="slide">
-  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Systematic sample</span>
+  <span class="tag t-m3" style="align-self:flex-start">Aditya Mehta · Unit 3 · Systematic sample</span>
   <h2>k = 3,851, random start r = 975, and all 3,851 possible samples</h2>
   <div class="body">
     <div class="col">
@@ -271,7 +271,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Comparison and ANOVA</span>
+  <span class="tag t-m3" style="align-self:flex-start">Aditya Mehta · Unit 3 · Comparison and ANOVA</span>
   <h2>Best design for the proportion: 12% better than SRS</h2>
   <div class="body">
     <div class="col">
@@ -294,7 +294,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Effect of k and of list order</span>
+  <span class="tag t-m3" style="align-self:flex-start">Aditya Mehta · Unit 3 · Effect of k and of list order</span>
   <h2>The order of the list is part of the design</h2>
   <div class="body">
     <div class="col">
@@ -316,9 +316,9 @@
   <div class="notes"><b>Say:</b> "On a randomly shuffled list the advantage disappears, so the gain comes from the order of the list. Sorting by activity would help the proportion even more. Changing k changes the sample size, but systematic stays better than SRS for the proportion."</div>
 </section>
 
-<!-- ================= MEMBER 4 ================= -->
+<!-- ================= Cluster sampling ================= -->
 <section class="slide">
-  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · Clusters</span>
+  <span class="tag t-m4" style="align-self:flex-start">Abhinaba Das · Unit 4 · Clusters</span>
   <h2>27 enumeration blocks, every establishment in them</h2>
   <div class="body">
     <div class="col">
@@ -341,7 +341,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · ANOVA and intraclass correlation</span>
+  <span class="tag t-m4" style="align-self:flex-start">Abhinaba Das · Unit 4 · ANOVA and intraclass correlation</span>
   <h2>Businesses in the same block are alike: ICC = 0.29 for P</h2>
   <div class="body">
     <div class="col">
@@ -366,7 +366,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · Cluster size and errors</span>
+  <span class="tag t-m4" style="align-self:flex-start">Abhinaba Das · Unit 4 · Cluster size and errors</span>
   <h2>Bigger clusters, bigger loss; chosen for cost, not precision</h2>
   <div class="body">
     <div class="col">
@@ -383,13 +383,13 @@
     </div>
     <div class="col"><img src="../output/04_cluster/figures/design_effect_by_cluster_size.png" alt="Design effect by cluster size"><div class="cap">Figure 4.3</div></div>
   </div>
-  <div class="src">Tables 4.7-4.8, Figure 4.3 · output/04_cluster · TEAM/member4_cluster.md §8</div>
+  <div class="src">Tables 4.7-4.8, Figure 4.3 · output/04_cluster · TEAM/cluster.md §8</div>
   <div class="notes"><b>Say:</b> "Figure 4.3 shows that bigger clusters, like wards or whole towns, are far worse. Cluster sampling is chosen for low cost: 27 compact blocks instead of 748 scattered addresses. The main non-sampling errors we found are excluded activities, probable recording errors and the definition of owner's sex."</div>
 </section>
 
-<!-- ================= MEMBER 5 ================= -->
+<!-- ================= Comparison of designs ================= -->
 <section class="slide">
-  <span class="tag t-m5" style="align-self:flex-start">Member 5 · Comparison of designs</span>
+  <span class="tag t-m5" style="align-self:flex-start">Akash Kumar · Comparison of designs</span>
   <h2>Systematic best for P; Neyman best for the mean; cluster worst</h2>
   <div class="body">
     <div class="col">
@@ -411,7 +411,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m5" style="align-self:flex-start">Member 5 · F-tests and 500-repeat simulation</span>
+  <span class="tag t-m5" style="align-self:flex-start">Akash Kumar · F-tests and 500-repeat simulation</span>
   <h2>F-tests work for P; for the mean, normality fails</h2>
   <div class="body">
     <div class="col">
@@ -434,7 +434,7 @@
 </section>
 
 <section class="slide">
-  <span class="tag t-m5" style="align-self:flex-start">Member 5 · Recommendation and official statistics</span>
+  <span class="tag t-m5" style="align-self:flex-start">Akash Kumar · Recommendation and official statistics</span>
   <h2>Recommendation: systematic sampling on the location-ordered list</h2>
   <div class="body">
     <div class="col">
@@ -483,7 +483,7 @@
       </table>
     </div>
   </div>
-  <div class="notes"><b>Member 5 closes (20 s):</b> "In short: designs help only when they match the structure of the data. For this population we recommend systematic sampling. Thank you, and we're happy to take questions."</div>
+  <div class="notes"><b>Akash Kumar closes (20 s):</b> "In short: designs help only when they match the structure of the data. For this population we recommend systematic sampling. Thank you, and we're happy to take questions."</div>
 </section>
 
 </div>

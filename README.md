@@ -4,12 +4,22 @@
 
 Data source: https://microdata.gov.in/NADA/index.php/catalog/47/get-microdata
 
+## Team
+
+| Name | Register No. | Part |
+|---|---|---|
+| K Suraj Das | 2440224 | SRSWOR and SRSWR, sample size, data and frame |
+| Rithesh K R | 2440233 | Stratified sampling |
+| Aditya Mehta | 2440204 | Systematic sampling, charts |
+| Abhinaba Das | 2440203 | Cluster sampling, errors |
+| Akash Kumar | 2440206 | Comparison of designs, official statistics, report compilation |
+
 ## Start here
 
 | If you want to... | Open |
 |---|---|
 | Know your role and what to prepare for the viva | [TEAM/README.md](TEAM/README.md), then your own note in [TEAM/](TEAM) (PDFs in [TEAM/pdf/](TEAM/pdf)) |
-| Get your individual report | [reports/](reports): one PDF per member; type your name and register number on page 2 |
+| Get your individual report | [reports/](reports): one PDF per person, names already filled in |
 | Present | [presentation/slides.html](presentation/slides.html) (PDF: [presentation/slides.pdf](presentation/slides.pdf)) |
 | Read all results in one file | [output/all_results.pdf](output/all_results.pdf) |
 | Read one method's results | [output/README.md](output/README.md), then a folder like [output/02_stratified/](output/02_stratified) |
@@ -23,8 +33,8 @@ analysis/      R code, numbered in run order (00 to 07) + run_all.R
 data/          frame_karnataka.rds: the cleaned list of all 2.88 million establishments
 output/        one folder per script: a PDF report, figures, tables (CSV) and selected samples
 presentation/  slides.html (built from template.html by analysis/06_slides.R) and slides.pdf
-reports/       one report per member (built by analysis/07_member_reports.R; cover in template/)
-TEAM/          one note per member: what to say, formulas, results, viva questions and answers
+reports/       one report per person (built by analysis/07_reports.R; cover in template/)
+TEAM/          one note per person: what to say, formulas, results, viva questions and answers
 ```
 
 ## Re-running everything
@@ -38,7 +48,7 @@ TEAM/          one note per member: what to say, formulas, results, viva questio
 
    It takes about 2 minutes and rebuilds every table, figure and PDF. The random seed is fixed (2026), so everyone gets identical numbers.
 
-PDFs need Google Chrome (or Chromium) and the R package `commonmark`; the member reports also need LaTeX (`pdflatex`) and `qpdf`. Without them everything else still works. Re-exporting the raw data (script 00) also needs the census DVD in `dataset_archives/` and the R package `nesstarR`; without them script 00 is skipped and the frame in `data/` is used.
+PDFs need Google Chrome (or Chromium) and the R package `commonmark`; the individual reports also need LaTeX (`pdflatex`) and `qpdf`. Without them everything else still works. Re-exporting the raw data (script 00) also needs the census DVD in `dataset_archives/` and the R package `nesstarR`; without them script 00 is skipped and the frame in `data/` is used.
 
 ## Design in brief
 
