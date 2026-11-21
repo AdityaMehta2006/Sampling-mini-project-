@@ -11,6 +11,7 @@
 - [Part D: Design effect and relative efficiency](#part-d-design-effect-and-relative-efficiency)
 - [Part E: Extra - bigger clusters, lower efficiency](#part-e-extra---bigger-clusters-lower-efficiency)
 - [Part F: Comparison with SRS, stratified and systematic sampling](#part-f-comparison-with-srs-stratified-and-systematic-sampling)
+- [Sources](#sources)
 
 
 ## Part A: The clusters
@@ -154,4 +155,11 @@ With the total sample fixed at about 748 establishments, larger clusters mean fe
 | Cluster, ratio estimator (27 blocks, about 736 units) | 1.691 | 0.07032 | 0.337 | 0.042 |
 
 Stratified and systematic samples spread the units over the whole state; a cluster sample concentrates them in 27 small areas. Stratification gains when strata differ, and clustering loses when clusters differ, which is the same ANOVA idea seen from opposite sides. Cluster sampling is chosen for **cost**, not precision: 27 compact blocks need far less travel, and only a list of blocks (not of every establishment) is needed.
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/04_cluster/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

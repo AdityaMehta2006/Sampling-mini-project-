@@ -10,6 +10,20 @@ Each member has one note in this folder. Read this page first, then your own not
 | 4 | Cluster sampling (Unit 4) | ICC and efficiency, sampling and non-sampling errors | [member4_cluster.md](member4_cluster.md) | [output/04_cluster](../output/04_cluster/README.md) |
 | 5 | Comparison of designs | F-tests, simulation, official statistics link, report compilation | [member5_comparison.md](member5_comparison.md) | [output/05_comparison](../output/05_comparison/README.md) |
 
+## Your individual report
+
+Download your PDF from [reports/](../reports):
+
+| Member | Report |
+|---|---|
+| 1 | [Member1_SRSWOR_SRSWR.pdf](../reports/Member1_SRSWOR_SRSWR.pdf) |
+| 2 | [Member2_Stratified_Sampling.pdf](../reports/Member2_Stratified_Sampling.pdf) |
+| 3 | [Member3_Systematic_Sampling.pdf](../reports/Member3_Systematic_Sampling.pdf) |
+| 4 | [Member4_Cluster_Sampling.pdf](../reports/Member4_Cluster_Sampling.pdf) |
+| 5 | [Member5_Comparison_and_Official_Statistics.pdf](../reports/Member5_Comparison_and_Official_Statistics.pdf) |
+
+Page 1 already lists all five names. On **page 2**, click the grey boxes and type your **name**, **register number**, and the names in the roles table, using any PDF viewer (Chrome, Edge, Acrobat Reader). Then save or print the PDF.
+
 ## The project in five lines
 
 - **Population:** all **2,880,548 establishments in Karnataka**, from the Sixth Economic Census 2012-13 (MoSPI). This is real government data, and we checked it against MoSPI's own published figures: 67 of 67 checks match.

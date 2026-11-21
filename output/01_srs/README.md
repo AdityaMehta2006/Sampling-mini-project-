@@ -10,6 +10,7 @@
 - [Part C: Sample size for a specified precision](#part-c-sample-size-for-a-specified-precision)
 - [Part D: SRSWOR and SRSWR estimates](#part-d-srswor-and-srswr-estimates)
 - [Part E: SRSWOR compared with SRSWR](#part-e-srswor-compared-with-srswr)
+- [Sources](#sources)
 
 
 ## Part A: Data cleaning and the sampling frame
@@ -167,4 +168,11 @@ No record had to be removed, so the population is the complete census list of 2,
 | Distinct establishments in our SRSWR sample | 748 |
 
 SRSWR's variance is larger by the factor (N - 1)/(N - n) = 1.000259, only 0.026% more. Because n is a tiny fraction of N, selecting the same establishment twice is very unlikely, so the two schemes are practically equivalent. SRSWOR is still preferred, since it is never less precise.
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/01_srs/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

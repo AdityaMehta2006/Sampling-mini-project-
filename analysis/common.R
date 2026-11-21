@@ -25,6 +25,12 @@ D_PROP <- 0.03 # required margin of error for P: 3 percentage points
 N_SAMPLE <- 748 # common sample size n (justified in 01_srs.R)
 K_SYS <- 3851 # sampling interval k, since N = n k = 748 x 3851
 
+# Sources cited in every report and on the slides
+GITHUB_URL <- "https://github.com/AdityaMehta2006/Sampling-mini-project-"
+MOSPI_URL <- "https://microdata.gov.in/NADA/index.php/catalog/47"
+MOSPI_HOME <- "https://mospi.gov.in"
+NESSTARR_URL <- "https://cran.r-universe.dev/nesstarR"
+
 # Karnataka's four revenue divisions (district codes of the census file)
 DIVISIONS <- list(
   Bengaluru = c(12, 13, 14, 17, 18, 27, 28, 29, 30),
@@ -150,6 +156,15 @@ report_open <- function(name, title) {
 
 # Adds a table of contents built from the "## " headings, then closes the report.
 report_close <- function() {
+  folder <- basename(.report$dir)
+  cat("## Sources\n\n",
+    "- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), ",
+    "National Data Archive: <", MOSPI_URL, ">\n",
+    "- MoSPI: <", MOSPI_HOME, ">\n",
+    "- Code and all results of this project: <", GITHUB_URL, "> (this report: `output/", folder, "/`)\n",
+    "- Data export from the Nesstar file: R package nesstarR, <", NESSTARR_URL, ">\n\n",
+    sep = "", file = .report$file, append = TRUE
+  )
   lines <- readLines(.report$file, encoding = "UTF-8")
   heads <- sub("^## ", "", grep("^## ", lines, value = TRUE))
   anchor <- gsub(" ", "-", gsub("[^a-z0-9 -]", "", tolower(heads)))
@@ -191,7 +206,7 @@ find_chrome <- function() {
   if (length(found) == 0) NA_character_ else unname(found[1])
 }
 
-markdown_to_pdf <- function(md_file, pdf_file) {
+markdown_to_pdf <- function(md_file, pdf_file, extra_css = "") {
   chrome <- find_chrome()
   if (!requireNamespace("commonmark", quietly = TRUE) || is.na(chrome)) {
     message("PDF skipped (needs the R package 'commonmark' and Google Chrome or Chromium).")
@@ -209,7 +224,7 @@ markdown_to_pdf <- function(md_file, pdf_file) {
   title <- sub("^# ", "", strsplit(md, "\n")[[1]][1])
   html <- paste0(
     "<!doctype html><html><head><meta charset='utf-8'><title>", title, "</title><style>",
-    REPORT_CSS, "</style></head><body>", body, "</body></html>"
+    REPORT_CSS, extra_css, "</style></head><body>", body, "</body></html>"
   )
   html_file <- file.path(dirname(md_file), ".report_tmp.html") # same folder, so image paths work
   writeLines(html, html_file, useBytes = TRUE)

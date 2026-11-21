@@ -11,6 +11,7 @@
 - [Part D: Gain in precision over SRS](#part-d-gain-in-precision-over-srs)
 - [Part E: One-way ANOVA with strata as groups](#part-e-one-way-anova-with-strata-as-groups)
 - [Part F: Extra - which basis of stratification is better?](#part-f-extra---which-basis-of-stratification-is-better)
+- [Sources](#sources)
 
 
 ## Part A: The strata
@@ -158,4 +159,11 @@ Divisions are better for the **mean** (their SDs differ more). Activity type is 
 ![Figure 2.3: Stratum means differ little; female ownership differs a lot (dashed line = whole state)](figures/stratum_means_and_proportions.png)
 
 *Figure 2.3: Stratum means differ little; female ownership differs a lot (dashed line = whole state)*
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/02_stratified/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

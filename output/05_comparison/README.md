@@ -9,6 +9,7 @@
 - [Part B: F-tests comparing the variances of two designs](#part-b-f-tests-comparing-the-variances-of-two-designs)
 - [Part C: Monte Carlo simulation - every design repeated 500 times](#part-c-monte-carlo-simulation---every-design-repeated-500-times)
 - [Part D: Recommended design](#part-d-recommended-design)
+- [Sources](#sources)
 
 
 ## Part A: Master comparison table
@@ -119,4 +120,11 @@ For two designs A and B: H0: the two estimators have equal variance. H1: the one
 | Cluster | 0.337 | 0.042 | Cheapest fieldwork: 27 compact areas, no full list needed, only lists of blocks |
 
 **Recommendation: systematic sampling from the census list ordered by location.** It is the most precise design for the proportion (RE 1.12) and as good as SRS for the mean (RE 1.01). It needs only one random number, and walking down a geographically ordered list spreads the sample over every district. If the mean number of workers were the main target, Neyman-allocated stratified sampling (best for the mean, RE 1.17) would be preferred. Cluster sampling is cheapest in the field but loses most of its precision (RE 0.04 for the proportion) because businesses in the same block are alike.
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/05_comparison/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

@@ -12,6 +12,7 @@
 - [Part E: One-way ANOVA with the k systematic samples as groups](#part-e-one-way-anova-with-the-k-systematic-samples-as-groups)
 - [Part F: Effect of k (different sample sizes)](#part-f-effect-of-k-different-sample-sizes)
 - [Part G: Extra - how the order of the list matters](#part-g-extra---how-the-order-of-the-list-matters)
+- [Sources](#sources)
 
 
 ## Part A: Set-up
@@ -145,4 +146,11 @@ A smaller k means a larger sample and a smaller SE. Against SRS of the **same** 
 | Sorted by activity type | 0.9580 | 1.283 |
 
 On a **randomly shuffled** list, systematic sampling is just SRS (RE ~ 1). Ordering the list by location or by activity makes it act like a finely stratified sample, and sorting by activity helps the proportion most, because female ownership differs most between activities. The order of the frame is a design choice.
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/03_systematic/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

@@ -14,7 +14,8 @@ scripts <- c(
   "03_systematic.R", # Member 3: systematic sampling
   "04_cluster.R", # Member 4: cluster sampling
   "05_comparison.R", # Member 5: comparison, F-tests, simulation
-  "06_slides.R" # presentation built from the verified results
+  "06_slides.R", # presentation built from the verified results
+  "07_member_reports.R" # one PDF report per member (needs pdflatex, Chrome, qpdf)
 )
 
 for (s in scripts) {

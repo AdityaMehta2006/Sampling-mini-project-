@@ -7,6 +7,7 @@
 
 - [Step 1: Export from the Nesstar file](#step-1-export-from-the-nesstar-file)
 - [Step 2: Comparison with the official MoSPI figures](#step-2-comparison-with-the-official-mospi-figures)
+- [Sources](#sources)
 
 
 ## Step 1: Export from the Nesstar file
@@ -90,4 +91,11 @@ Each row compares one official MoSPI figure with our export. Means and SDs are c
 | District | count in each of 30 categories | 2,880,548 cases | 2,880,548 cases | yes |
 
 **Result: 67 of 67 checks passed.** The export matches every official figure, so no values were lost or changed. (The DVD also lists two label-only columns, `Tahsil` and `Village_or_Town`, which are text copies of location codes that are present in the data.)
+
+## Sources
+
+- Data: Sixth Economic Census 2012-13, Ministry of Statistics and Programme Implementation (MoSPI), National Data Archive: <https://microdata.gov.in/NADA/index.php/catalog/47>
+- MoSPI: <https://mospi.gov.in>
+- Code and all results of this project: <https://github.com/AdityaMehta2006/Sampling-mini-project-> (this report: `output/00_data_verification/`)
+- Data export from the Nesstar file: R package nesstarR, <https://cran.r-universe.dev/nesstarR>
 

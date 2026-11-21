@@ -122,9 +122,9 @@ A: Neyman-allocated stratified sampling (RE 1.17). Even better would be strata b
 
 ## 8. Draft for the report: Link to India's official statistical system (about 2 pages)
 
-> All facts below come from MoSPI's documentation on the census DVD (overview, data collection and sampling pages, Instruction Manual, All-India Report), except where marked **[check and cite]**.
+> The facts below come from MoSPI's documentation on the census DVD (overview, data collection and sampling pages, Instruction Manual, All-India Report).
 
-**8.1 The survey and the agency.** Our data is the **Sixth Economic Census (EC6), 2012-13**, conducted by the **Central Statistics Office (CSO), Ministry of Statistics and Programme Implementation (MoSPI)**, through its Economic Statistics Division, together with the Directorates of Economics and Statistics of the State and Union Territory governments. **[check and cite:** in 2019 CSO and NSSO were merged into the National Statistical Office (NSO)**.]** The Economic Census is a complete count of all establishments, meaning units engaged in producing or distributing goods and services not only for their own consumption, within the country's boundaries.
+**8.1 The survey and the agency.** Our data is the **Sixth Economic Census (EC6), 2012-13**, conducted by the **Central Statistics Office (CSO), Ministry of Statistics and Programme Implementation (MoSPI)**, through its Economic Statistics Division, together with the Directorates of Economics and Statistics of the State and Union Territory governments. (In 2019 the CSO and the National Sample Survey Office were merged into the National Statistical Office, NSO, under MoSPI.) The Economic Census is a complete count of all establishments, meaning units engaged in producing or distributing goods and services not only for their own consumption, within the country's boundaries.
 
 **8.2 History and purpose.** The CSO began Economic Censuses in 1976 under the scheme "Economic Census and Surveys". Censuses were held in 1977, 1980, 1990, 1998, 2005 and 2013. Their main purpose is to provide a **frame**, a list of establishments, for detailed follow-up sample surveys of the unorganised non-agricultural sector, such as the NSS rounds on enterprises. Before the Economic Census, establishment data came from partial and irregular surveys, which caused under-coverage and unreliable estimates.
 
@@ -143,7 +143,7 @@ A: Neyman-allocated stratified sampling (RE 1.17). Even better would be strata b
 - **Self-reported information** on workers, with no verification against records.
 - **Timeliness:** the frame ages quickly, because small businesses open and close often, so it needs regular updating.
 
-**8.8 How it links to our project.** Official surveys use the Economic Census exactly as we did: as a frame for sampling. NSS enterprise surveys use stratified multi-stage designs with villages and urban blocks as first-stage units **[check and cite:** NSS 73rd round, 2015-16, unincorporated non-agricultural enterprises**]**. Our results show why: stratification and ordering the list by location improve precision, while sampling whole areas (clusters) is cheap but loses precision when units in an area are alike.
+**8.8 How it links to our project.** Official surveys use the Economic Census exactly as we did: as a frame for sampling. NSS enterprise surveys, such as the 73rd round (2015-16) on unincorporated non-agricultural enterprises, use stratified multi-stage designs with villages and urban blocks as first-stage units. Our results show why: stratification and ordering the list by location improve precision, while sampling whole areas (clusters) is cheap but loses precision when units in an area are alike.
 
 ## 9. Compiling the report (from the assignment)
 
