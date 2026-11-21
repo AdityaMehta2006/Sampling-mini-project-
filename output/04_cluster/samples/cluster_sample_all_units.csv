@@ -1,0 +1,654 @@
+"unit_id","DT","district","division","activity","sector","ownership","cluster_id","Y","female"
+17551,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17552,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17553,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,1
+17554,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17555,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17556,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17557,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17558,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17559,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,0
+17560,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,1
+17561,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,1
+17562,"01","Belgaum","Belagavi","Primary","Rural","2","01-001-0063-0000-0328",1,1
+17563,"01","Belgaum","Belagavi","Trade","Rural","2","01-001-0063-0000-0328",1,0
+17564,"01","Belgaum","Belagavi","Trade","Rural","2","01-001-0063-0000-0328",1,0
+17565,"01","Belgaum","Belagavi","Trade","Rural","2","01-001-0063-0000-0328",1,0
+17566,"01","Belgaum","Belagavi","Trade","Rural","2","01-001-0063-0000-0328",1,0
+17567,"01","Belgaum","Belagavi","Services","Rural","3","01-001-0063-0000-0328",1,0
+17568,"01","Belgaum","Belagavi","Services","Rural","2","01-001-0063-0000-0328",1,0
+17569,"01","Belgaum","Belagavi","Services","Rural","2","01-001-0063-0000-0328",1,0
+17570,"01","Belgaum","Belagavi","Services","Rural","1","01-001-0063-0000-0328",2,0
+97532,"01","Belgaum","Belagavi","Manufacturing","Urban","2","01-005-7012-0002-0003",1,0
+97533,"01","Belgaum","Belagavi","Manufacturing","Urban","2","01-005-7012-0002-0003",2,0
+97534,"01","Belgaum","Belagavi","Manufacturing","Urban","2","01-005-7012-0002-0003",1,0
+97535,"01","Belgaum","Belagavi","Manufacturing","Urban","2","01-005-7012-0002-0003",2,0
+97536,"01","Belgaum","Belagavi","Manufacturing","Urban","2","01-005-7012-0002-0003",3,0
+97537,"01","Belgaum","Belagavi","Trade","Urban","2","01-005-7012-0002-0003",1,0
+97538,"01","Belgaum","Belagavi","Services","Urban","2","01-005-7012-0002-0003",1,0
+97539,"01","Belgaum","Belagavi","Services","Urban","6","01-005-7012-0002-0003",2,0
+97540,"01","Belgaum","Belagavi","Services","Urban","2","01-005-7012-0002-0003",1,0
+97541,"01","Belgaum","Belagavi","Services","Urban","2","01-005-7012-0002-0003",2,0
+97542,"01","Belgaum","Belagavi","Services","Urban","2","01-005-7012-0002-0003",1,0
+97543,"01","Belgaum","Belagavi","Services","Urban","2","01-005-7012-0002-0003",2,0
+184000,"02","Bagalkot","Belagavi","Manufacturing","Urban","2","02-001-7021-0024-0074",1,0
+184001,"02","Bagalkot","Belagavi","Manufacturing","Urban","2","02-001-7021-0024-0074",1,1
+184002,"02","Bagalkot","Belagavi","Trade","Urban","2","02-001-7021-0024-0074",1,0
+184003,"02","Bagalkot","Belagavi","Trade","Urban","2","02-001-7021-0024-0074",1,1
+184004,"02","Bagalkot","Belagavi","Trade","Urban","2","02-001-7021-0024-0074",1,1
+184005,"02","Bagalkot","Belagavi","Trade","Urban","2","02-001-7021-0024-0074",1,1
+184006,"02","Bagalkot","Belagavi","Trade","Urban","2","02-001-7021-0024-0074",1,0
+184007,"02","Bagalkot","Belagavi","Services","Urban","2","02-001-7021-0024-0074",1,0
+184008,"02","Bagalkot","Belagavi","Services","Urban","2","02-001-7021-0024-0074",1,0
+291386,"03","Bijapur","Belagavi","Primary","Rural","2","03-004-0106-0000-0423",1,0
+291387,"03","Bijapur","Belagavi","Manufacturing","Rural","2","03-004-0106-0000-0423",1,0
+291388,"03","Bijapur","Belagavi","Trade","Rural","2","03-004-0106-0000-0423",1,0
+291389,"03","Bijapur","Belagavi","Trade","Rural","2","03-004-0106-0000-0423",2,0
+291390,"03","Bijapur","Belagavi","Trade","Rural","2","03-004-0106-0000-0423",1,0
+291391,"03","Bijapur","Belagavi","Trade","Rural","2","03-004-0106-0000-0423",2,0
+291392,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+291393,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",2,0
+291394,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",2,0
+291395,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",9,0
+291396,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+291397,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+291398,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",2,0
+291399,"03","Bijapur","Belagavi","Services","Rural","1","03-004-0106-0000-0423",6,0
+291400,"03","Bijapur","Belagavi","Services","Rural","1","03-004-0106-0000-0423",1,0
+291401,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",2,0
+291402,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+291403,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+291404,"03","Bijapur","Belagavi","Services","Rural","2","03-004-0106-0000-0423",1,0
+327804,"04","Bidar","Kalaburagi","Manufacturing","Rural","2","04-004-0020-0000-0044",3,0
+327805,"04","Bidar","Kalaburagi","Manufacturing","Rural","2","04-004-0020-0000-0044",2,0
+327806,"04","Bidar","Kalaburagi","Manufacturing","Rural","2","04-004-0020-0000-0044",3,0
+327807,"04","Bidar","Kalaburagi","Trade","Rural","2","04-004-0020-0000-0044",1,0
+327808,"04","Bidar","Kalaburagi","Trade","Rural","2","04-004-0020-0000-0044",2,0
+327809,"04","Bidar","Kalaburagi","Trade","Rural","2","04-004-0020-0000-0044",1,0
+327810,"04","Bidar","Kalaburagi","Trade","Rural","2","04-004-0020-0000-0044",3,0
+327811,"04","Bidar","Kalaburagi","Trade","Rural","2","04-004-0020-0000-0044",2,0
+327812,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",2,0
+327813,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",1,0
+327814,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",1,0
+327815,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",3,0
+327816,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",2,0
+327817,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",1,0
+327818,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",1,0
+327819,"04","Bidar","Kalaburagi","Services","Rural","2","04-004-0020-0000-0044",3,0
+395784,"05","Raichur","Kalaburagi","Manufacturing","Rural","2","05-005-0026-0000-0105",1,0
+395785,"05","Raichur","Kalaburagi","Manufacturing","Rural","2","05-005-0026-0000-0105",1,0
+395786,"05","Raichur","Kalaburagi","Trade","Rural","2","05-005-0026-0000-0105",2,1
+395787,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395788,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395789,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395790,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395791,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395792,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395793,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395794,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395795,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395796,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395797,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395798,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395799,"05","Raichur","Kalaburagi","Services","Rural","1","05-005-0026-0000-0105",2,0
+395800,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",2,0
+395801,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395802,"05","Raichur","Kalaburagi","Services","Rural","1","05-005-0026-0000-0105",2,0
+395803,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,1
+395804,"05","Raichur","Kalaburagi","Services","Rural","2","05-005-0026-0000-0105",1,0
+395805,"05","Raichur","Kalaburagi","Services","Rural","1","05-005-0026-0000-0105",1,0
+609678,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609679,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609680,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609681,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609682,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609683,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,1
+609684,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609685,"10","Haveri","Belagavi","Manufacturing","Rural","1","10-001-0026-0000-0065",1,0
+609686,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609687,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609688,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609689,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609690,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609691,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,1
+609692,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609693,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,1
+609694,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609695,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609696,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609697,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609698,"10","Haveri","Belagavi","Services","Rural","1","10-001-0026-0000-0065",2,0
+609699,"10","Haveri","Belagavi","Services","Rural","1","10-001-0026-0000-0065",2,0
+609700,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609701,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",2,1
+609702,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609703,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,1
+609704,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609705,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,0
+609706,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609707,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609708,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609709,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609710,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,0
+609711,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-001-0026-0000-0065",1,1
+609712,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,1
+609713,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,1
+609714,"10","Haveri","Belagavi","Trade","Rural","2","10-001-0026-0000-0065",1,0
+609715,"10","Haveri","Belagavi","Services","Rural","2","10-001-0026-0000-0065",1,1
+647896,"10","Haveri","Belagavi","Primary","Rural","2","10-006-0089-0000-0230",1,0
+647897,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",1,0
+647898,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",1,0
+647899,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",1,0
+647900,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",2,0
+647901,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",1,1
+647902,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",2,0
+647903,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",1,0
+647904,"10","Haveri","Belagavi","Manufacturing","Rural","2","10-006-0089-0000-0230",4,0
+647905,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647906,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647907,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647908,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647909,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647910,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647911,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647912,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647913,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647914,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",1,0
+647915,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",3,0
+647916,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647917,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647918,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647919,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",2,0
+647920,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",4,1
+647921,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",4,1
+647922,"10","Haveri","Belagavi","Trade","Rural","2","10-006-0089-0000-0230",4,1
+647923,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",1,0
+647924,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",2,0
+647925,"10","Haveri","Belagavi","Services","Rural","1","10-006-0089-0000-0230",1,0
+647926,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",1,0
+647927,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",2,0
+647928,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",2,0
+647929,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",2,0
+647930,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",4,0
+647931,"10","Haveri","Belagavi","Services","Rural","2","10-006-0089-0000-0230",1,0
+647932,"10","Haveri","Belagavi","Services","Rural","1","10-006-0089-0000-0230",2,0
+647933,"10","Haveri","Belagavi","Services","Rural","1","10-006-0089-0000-0230",5,0
+734814,"11","Bellary","Kalaburagi","Manufacturing","Rural","2","11-006-0029-0000-0072",1,0
+734815,"11","Bellary","Kalaburagi","Manufacturing","Rural","2","11-006-0029-0000-0072",4,0
+734816,"11","Bellary","Kalaburagi","Construction","Rural","2","11-006-0029-0000-0072",2,0
+734817,"11","Bellary","Kalaburagi","Construction","Rural","2","11-006-0029-0000-0072",1,0
+734818,"11","Bellary","Kalaburagi","Construction","Rural","2","11-006-0029-0000-0072",1,0
+734819,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",1,1
+734820,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",1,0
+734821,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",2,1
+734822,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",2,0
+734823,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",3,0
+734824,"11","Bellary","Kalaburagi","Services","Rural","1","11-006-0029-0000-0072",3,0
+734825,"11","Bellary","Kalaburagi","Services","Rural","2","11-006-0029-0000-0072",2,0
+734826,"11","Bellary","Kalaburagi","Services","Rural","2","11-006-0029-0000-0072",1,0
+734827,"11","Bellary","Kalaburagi","Services","Rural","2","11-006-0029-0000-0072",2,0
+734828,"11","Bellary","Kalaburagi","Services","Rural","2","11-006-0029-0000-0072",2,0
+734829,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",1,1
+734830,"11","Bellary","Kalaburagi","Primary","Rural","9","11-006-0029-0000-0072",2,0
+734831,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",3,0
+734832,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",2,0
+734833,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",4,0
+734834,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",2,0
+734835,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",2,0
+734836,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0029-0000-0072",2,0
+734837,"11","Bellary","Kalaburagi","Manufacturing","Rural","2","11-006-0029-0000-0072",1,0
+734838,"11","Bellary","Kalaburagi","Manufacturing","Rural","9","11-006-0029-0000-0072",1,0
+734839,"11","Bellary","Kalaburagi","Manufacturing","Rural","2","11-006-0029-0000-0072",1,0
+734840,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0029-0000-0072",1,0
+734841,"11","Bellary","Kalaburagi","Services","Rural","2","11-006-0029-0000-0072",4,0
+734842,"11","Bellary","Kalaburagi","Services","Rural","7","11-006-0029-0000-0072",1,0
+734843,"11","Bellary","Kalaburagi","Services","Rural","7","11-006-0029-0000-0072",2,0
+736757,"11","Bellary","Kalaburagi","Primary","Rural","9","11-006-0048-0000-0133",4,0
+736758,"11","Bellary","Kalaburagi","Primary","Rural","2","11-006-0048-0000-0133",4,1
+736759,"11","Bellary","Kalaburagi","Trade","Rural","2","11-006-0048-0000-0133",4,1
+783875,"12","Chitradurga","Bengaluru","Manufacturing","Rural","2","12-005-0025-0000-0054",1,1
+783876,"12","Chitradurga","Bengaluru","Construction","Rural","2","12-005-0025-0000-0054",1,1
+783877,"12","Chitradurga","Bengaluru","Construction","Rural","2","12-005-0025-0000-0054",1,0
+783878,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-005-0025-0000-0054",1,0
+783879,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-005-0025-0000-0054",1,0
+783880,"12","Chitradurga","Bengaluru","Services","Rural","2","12-005-0025-0000-0054",1,0
+783881,"12","Chitradurga","Bengaluru","Services","Rural","1","12-005-0025-0000-0054",2,0
+783882,"12","Chitradurga","Bengaluru","Services","Rural","1","12-005-0025-0000-0054",3,0
+793196,"12","Chitradurga","Bengaluru","Manufacturing","Rural","2","12-006-0002-0000-0007",1,0
+793197,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,0
+793198,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,0
+793199,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,1
+793200,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,0
+793201,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,0
+793202,"12","Chitradurga","Bengaluru","Trade","Rural","2","12-006-0002-0000-0007",1,0
+793203,"12","Chitradurga","Bengaluru","Services","Rural","1","12-006-0002-0000-0007",2,0
+793204,"12","Chitradurga","Bengaluru","Services","Rural","2","12-006-0002-0000-0007",1,0
+793205,"12","Chitradurga","Bengaluru","Services","Rural","2","12-006-0002-0000-0007",1,0
+793206,"12","Chitradurga","Bengaluru","Services","Rural","1","12-006-0002-0000-0007",14,0
+799639,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,0
+799640,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,0
+799641,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799642,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799643,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799644,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799645,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799646,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799647,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799648,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799649,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799650,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,0
+799651,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,0
+799652,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,0
+799653,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799654,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",2,0
+799655,"12","Chitradurga","Bengaluru","Construction","Urban","2","12-006-7103-0013-0038",1,0
+799656,"12","Chitradurga","Bengaluru","Construction","Urban","2","12-006-7103-0013-0038",2,0
+799657,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799658,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",2,0
+799659,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799660,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799661,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799662,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",2,1
+799663,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",3,0
+799664,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",1,1
+799665,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",1,0
+799666,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",1,0
+799667,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",1,0
+799668,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799669,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799670,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799671,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799672,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799673,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799674,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799675,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799676,"12","Chitradurga","Bengaluru","Manufacturing","Urban","2","12-006-7103-0013-0038",1,1
+799677,"12","Chitradurga","Bengaluru","Manufacturing","Urban","1","12-006-7103-0013-0038",1,0
+799678,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799679,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,1
+799680,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799681,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799682,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,0
+799683,"12","Chitradurga","Bengaluru","Trade","Urban","2","12-006-7103-0013-0038",1,1
+799684,"12","Chitradurga","Bengaluru","Services","Urban","2","12-006-7103-0013-0038",1,0
+864021,"14","Shimoga","Bengaluru","Manufacturing","Rural","2","14-001-0119-0000-0548",2,0
+864022,"14","Shimoga","Bengaluru","Manufacturing","Rural","2","14-001-0119-0000-0548",2,0
+864023,"14","Shimoga","Bengaluru","Manufacturing","Rural","2","14-001-0119-0000-0548",2,0
+864024,"14","Shimoga","Bengaluru","Manufacturing","Rural","2","14-001-0119-0000-0548",2,0
+864025,"14","Shimoga","Bengaluru","Manufacturing","Rural","2","14-001-0119-0000-0548",2,0
+864026,"14","Shimoga","Bengaluru","Services","Rural","2","14-001-0119-0000-0548",1,0
+864027,"14","Shimoga","Bengaluru","Services","Rural","2","14-001-0119-0000-0548",1,0
+864028,"14","Shimoga","Bengaluru","Services","Rural","2","14-001-0119-0000-0548",1,0
+896237,"14","Shimoga","Bengaluru","Primary","Rural","2","14-004-0148-0000-0557",6,0
+896238,"14","Shimoga","Bengaluru","Primary","Rural","2","14-004-0148-0000-0557",3,0
+896239,"14","Shimoga","Bengaluru","Primary","Rural","2","14-004-0148-0000-0557",2,0
+896240,"14","Shimoga","Bengaluru","Services","Rural","2","14-004-0148-0000-0557",1,0
+896241,"14","Shimoga","Bengaluru","Services","Rural","2","14-004-0148-0000-0557",1,0
+1080818,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080819,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080820,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080821,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080822,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080823,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080824,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080825,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080826,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",2,0
+1080827,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",2,0
+1080828,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,1
+1080829,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,1
+1080830,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",2,0
+1080831,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",2,0
+1080832,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080833,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",3,0
+1080834,"16","Chikmagalur","Mysuru","Primary","Rural","2","16-005-0032-0000-0045",1,0
+1080835,"16","Chikmagalur","Mysuru","Manufacturing","Rural","2","16-005-0032-0000-0045",1,1
+1080836,"16","Chikmagalur","Mysuru","Manufacturing","Rural","2","16-005-0032-0000-0045",1,0
+1080837,"16","Chikmagalur","Mysuru","Services","Rural","2","16-005-0032-0000-0045",1,0
+1080838,"16","Chikmagalur","Mysuru","Services","Rural","2","16-005-0032-0000-0045",1,0
+1080839,"16","Chikmagalur","Mysuru","Services","Rural","1","16-005-0032-0000-0045",3,0
+1174456,"17","Tumkur","Bengaluru","Primary","Rural","2","17-004-0005-0000-0010",2,1
+1174457,"17","Tumkur","Bengaluru","Primary","Rural","2","17-004-0005-0000-0010",1,0
+1174458,"17","Tumkur","Bengaluru","Primary","Rural","2","17-004-0005-0000-0010",1,0
+1174459,"17","Tumkur","Bengaluru","Primary","Rural","2","17-004-0005-0000-0010",1,1
+1174460,"17","Tumkur","Bengaluru","Primary","Rural","2","17-004-0005-0000-0010",1,1
+1174461,"17","Tumkur","Bengaluru","Manufacturing","Rural","2","17-004-0005-0000-0010",1,1
+1174462,"17","Tumkur","Bengaluru","Manufacturing","Rural","2","17-004-0005-0000-0010",1,0
+1174463,"17","Tumkur","Bengaluru","Manufacturing","Rural","2","17-004-0005-0000-0010",1,1
+1174464,"17","Tumkur","Bengaluru","Manufacturing","Rural","2","17-004-0005-0000-0010",1,0
+1174465,"17","Tumkur","Bengaluru","Trade","Rural","9","17-004-0005-0000-0010",2,0
+1174466,"17","Tumkur","Bengaluru","Trade","Rural","2","17-004-0005-0000-0010",1,1
+1174467,"17","Tumkur","Bengaluru","Trade","Rural","2","17-004-0005-0000-0010",1,1
+1174468,"17","Tumkur","Bengaluru","Trade","Rural","2","17-004-0005-0000-0010",1,1
+1174469,"17","Tumkur","Bengaluru","Trade","Rural","2","17-004-0005-0000-0010",1,0
+1174470,"17","Tumkur","Bengaluru","Services","Rural","2","17-004-0005-0000-0010",1,0
+1174471,"17","Tumkur","Bengaluru","Services","Rural","1","17-004-0005-0000-0010",11,0
+1174472,"17","Tumkur","Bengaluru","Services","Rural","1","17-004-0005-0000-0010",6,0
+1174473,"17","Tumkur","Bengaluru","Services","Rural","1","17-004-0005-0000-0010",2,0
+1174474,"17","Tumkur","Bengaluru","Services","Rural","2","17-004-0005-0000-0010",1,0
+1351709,"18","Bangalore","Bengaluru","Manufacturing","Urban","2","18-000-7142-0036-0057",3,0
+1351710,"18","Bangalore","Bengaluru","Manufacturing","Urban","2","18-000-7142-0036-0057",3,0
+1351711,"18","Bangalore","Bengaluru","Manufacturing","Urban","2","18-000-7142-0036-0057",2,0
+1351712,"18","Bangalore","Bengaluru","Manufacturing","Urban","9","18-000-7142-0036-0057",2,0
+1351713,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",3,0
+1351714,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",3,0
+1351715,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",5,0
+1351716,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",3,0
+1351717,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",4,0
+1351718,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351719,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351720,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351721,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351722,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",5,0
+1351723,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351724,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351725,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351726,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351727,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351728,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351729,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0036-0057",2,0
+1351730,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",1,0
+1351731,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",1,0
+1351732,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",1,0
+1351733,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",4,0
+1351734,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",2,0
+1351735,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",2,0
+1351736,"18","Bangalore","Bengaluru","Services","Urban","5","18-000-7142-0036-0057",2,0
+1351737,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",1,0
+1351738,"18","Bangalore","Bengaluru","Services","Urban","9","18-000-7142-0036-0057",2,0
+1351739,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0036-0057",2,1
+1357014,"18","Bangalore","Bengaluru","Manufacturing","Urban","2","18-000-7142-0039-0040",1,0
+1357015,"18","Bangalore","Bengaluru","Manufacturing","Urban","2","18-000-7142-0039-0040",7,0
+1357016,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",4,0
+1357017,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",6,0
+1357018,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",2,0
+1357019,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",2,0
+1357020,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357021,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",2,0
+1357022,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357023,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,1
+1357024,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357025,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357026,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357027,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",2,0
+1357028,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357029,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357030,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357031,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",1,0
+1357032,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0039-0040",4,0
+1357033,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357034,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357035,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357036,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357037,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",7,0
+1357038,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",3,0
+1357039,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",7,0
+1357040,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357041,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",7,0
+1357042,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",5,0
+1357043,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",14,0
+1357044,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",2,0
+1357045,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1357046,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",2,0
+1357047,"18","Bangalore","Bengaluru","Services","Urban","2","18-000-7142-0039-0040",1,0
+1368783,"18","Bangalore","Bengaluru","Trade","Urban","9","18-000-7142-0044-0020",1,0
+1368784,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0044-0020",1,0
+1368785,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0044-0020",1,1
+1368786,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0044-0020",1,0
+1368787,"18","Bangalore","Bengaluru","Trade","Urban","7","18-000-7142-0044-0020",2,0
+1368788,"18","Bangalore","Bengaluru","Trade","Urban","2","18-000-7142-0044-0020",1,1
+1880365,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880366,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880367,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880368,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,1
+1880369,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,1
+1880370,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880371,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880372,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880373,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,1
+1880374,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880375,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880376,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880377,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,1
+1880378,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880379,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880380,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880381,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880382,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880383,"20","Hassan","Mysuru","Primary","Rural","2","20-002-0247-0000-0448",1,0
+1880384,"20","Hassan","Mysuru","Services","Rural","2","20-002-0247-0000-0448",1,0
+1880385,"20","Hassan","Mysuru","Services","Rural","2","20-002-0247-0000-0448",1,0
+1880386,"20","Hassan","Mysuru","Services","Rural","2","20-002-0247-0000-0448",1,0
+1880387,"20","Hassan","Mysuru","Services","Rural","2","20-002-0247-0000-0448",1,0
+1880388,"20","Hassan","Mysuru","Services","Rural","1","20-002-0247-0000-0448",3,0
+2162903,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,1
+2162904,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162905,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162906,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162907,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162908,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162909,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",1,0
+2162910,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",3,0
+2162911,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",3,0
+2162912,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",3,0
+2162913,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",3,0
+2162914,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",2,0
+2162915,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",4,0
+2162916,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",4,0
+2162917,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",7,1
+2162918,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",4,0
+2162919,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",2,0
+2162920,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",2,0
+2162921,"21","Dakshina Kannada","Mysuru","Manufacturing","Rural","2","21-003-0048-0000-0219",4,0
+2162922,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162923,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162924,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162925,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",5,1
+2162926,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162927,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162928,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162929,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162930,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162931,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162932,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162933,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162934,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162935,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162936,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162937,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162938,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162939,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162940,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162941,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162942,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162943,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162944,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162945,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162946,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162947,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162948,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162949,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",1,0
+2162950,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",5,0
+2162951,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",5,0
+2162952,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162953,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162954,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162955,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162956,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162957,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162958,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162959,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162960,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,1
+2162961,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162962,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,1
+2162963,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162964,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162965,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162966,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162967,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",2,0
+2162968,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162969,"21","Dakshina Kannada","Mysuru","Trade","Rural","2","21-003-0048-0000-0219",3,0
+2162970,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162971,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162972,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",4,0
+2162973,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",5,0
+2162974,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",5,0
+2162975,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",3,0
+2162976,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",9,0
+2162977,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,1
+2162978,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162979,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",7,0
+2162980,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",5,0
+2162981,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162982,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162983,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162984,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162985,"21","Dakshina Kannada","Mysuru","Services","Rural","1","21-003-0048-0000-0219",7,0
+2162986,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162987,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162988,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162989,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162990,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162991,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,1
+2162992,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162993,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162994,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162995,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",1,0
+2162996,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,0
+2162997,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",4,0
+2162998,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",3,1
+2162999,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",4,0
+2163000,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",2,1
+2163001,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",4,0
+2163002,"21","Dakshina Kannada","Mysuru","Services","Rural","2","21-003-0048-0000-0219",3,1
+2312952,"23","Mysore","Mysuru","Manufacturing","Urban","2","23-004-7174-0025-0009",2,0
+2312953,"23","Mysore","Mysuru","Manufacturing","Urban","2","23-004-7174-0025-0009",3,0
+2312954,"23","Mysore","Mysuru","Manufacturing","Urban","2","23-004-7174-0025-0009",2,0
+2312955,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,1
+2312956,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",2,0
+2312957,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,0
+2312958,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",4,0
+2312959,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,0
+2312960,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",4,0
+2312961,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,0
+2312962,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",2,0
+2312963,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",2,1
+2312964,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",6,1
+2312965,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,0
+2312966,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",3,0
+2312967,"23","Mysore","Mysuru","Trade","Urban","2","23-004-7174-0025-0009",4,0
+2312968,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",2,0
+2312969,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",2,0
+2312970,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",3,0
+2312971,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",2,0
+2312972,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",3,0
+2312973,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",2,0
+2312974,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",2,1
+2312975,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",3,0
+2312976,"23","Mysore","Mysuru","Services","Urban","2","23-004-7174-0025-0009",3,0
+2365568,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365569,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365570,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365571,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365572,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365573,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,1
+2365574,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,1
+2365575,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365576,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365577,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365578,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365579,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365580,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365581,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365582,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365583,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365584,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",1,0
+2365585,"23","Mysore","Mysuru","Primary","Rural","2","23-007-0013-0000-0052",2,1
+2365586,"23","Mysore","Mysuru","Manufacturing","Rural","2","23-007-0013-0000-0052",1,1
+2365587,"23","Mysore","Mysuru","Trade","Rural","2","23-007-0013-0000-0052",1,0
+2365588,"23","Mysore","Mysuru","Trade","Rural","2","23-007-0013-0000-0052",1,0
+2365589,"23","Mysore","Mysuru","Trade","Rural","2","23-007-0013-0000-0052",1,0
+2365590,"23","Mysore","Mysuru","Trade","Rural","2","23-007-0013-0000-0052",1,0
+2365591,"23","Mysore","Mysuru","Services","Rural","2","23-007-0013-0000-0052",1,0
+2365592,"23","Mysore","Mysuru","Services","Rural","2","23-007-0013-0000-0052",1,0
+2423479,"24","Chamarajanagar","Mysuru","Primary","Rural","9","24-002-0181-0000-0609",1,0
+2423480,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-002-0181-0000-0609",1,0
+2423481,"24","Chamarajanagar","Mysuru","Services","Rural","1","24-002-0181-0000-0609",2,0
+2455040,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455041,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,0
+2455042,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455043,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455044,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455045,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455046,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455047,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455048,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455049,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455050,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455051,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455052,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455053,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455054,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455055,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455056,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455057,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455058,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455059,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455060,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455061,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455062,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455063,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455064,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455065,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455066,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455067,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455068,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455069,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455070,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455071,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,1
+2455072,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455073,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455074,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455075,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455076,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455077,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455078,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455079,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455080,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455081,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",2,0
+2455082,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455083,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455084,"24","Chamarajanagar","Mysuru","Primary","Rural","2","24-004-0069-0000-0379",1,1
+2455085,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455086,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455087,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455088,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",2,0
+2455089,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455090,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",2,0
+2455091,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455092,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455093,"24","Chamarajanagar","Mysuru","Trade","Rural","2","24-004-0069-0000-0379",1,0
+2455094,"24","Chamarajanagar","Mysuru","Services","Rural","2","24-004-0069-0000-0379",2,1
+2455095,"24","Chamarajanagar","Mysuru","Services","Rural","1","24-004-0069-0000-0379",2,0
+2455096,"24","Chamarajanagar","Mysuru","Services","Rural","2","24-004-0069-0000-0379",1,0
+2518838,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,0
+2518839,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,0
+2518840,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,0
+2518841,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,0
+2518842,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,1
+2518843,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,1
+2518844,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,1
+2518845,"25","Gulbarga","Kalaburagi","Manufacturing","Rural","2","25-007-0026-0000-0061",1,0
+2518846,"25","Gulbarga","Kalaburagi","Trade","Rural","2","25-007-0026-0000-0061",1,0
+2518847,"25","Gulbarga","Kalaburagi","Trade","Rural","2","25-007-0026-0000-0061",1,1
+2518848,"25","Gulbarga","Kalaburagi","Trade","Rural","2","25-007-0026-0000-0061",1,0
+2518849,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518850,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518851,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518852,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518853,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518854,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518855,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",2,0
+2518856,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",2,0
+2518857,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518858,"25","Gulbarga","Kalaburagi","Services","Rural","2","25-007-0026-0000-0061",1,0
+2518859,"25","Gulbarga","Kalaburagi","Services","Rural","1","25-007-0026-0000-0061",2,0

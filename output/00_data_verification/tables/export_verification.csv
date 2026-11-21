@@ -1,0 +1,68 @@
+"Variable","Check","Official (MoSPI)","Our export","Match"
+"ST","valid cases","2,880,548","2,880,548",TRUE
+"ST","count in each of 1 categories","2,880,548 cases","2,880,548 cases",TRUE
+"DT","valid cases","2,880,548","2,880,548",TRUE
+"DT","count in each of 30 categories","2,880,548 cases","2,880,548 cases",TRUE
+"TEH","valid cases","2,880,548","2,880,548",TRUE
+"TEH","count in each of 16 categories","2,880,548 cases","2,880,548 cases",TRUE
+"T_V","valid cases","2,880,548","2,880,548",TRUE
+"T_V","count in each of 786 categories","2,880,548 cases","2,880,548 cases",TRUE
+"WC","valid cases","2,880,548","2,880,548",TRUE
+"WC","count in each of 228 categories","2,880,548 cases","2,880,548 cases",TRUE
+"EB","valid cases","2,880,548","2,880,548",TRUE
+"EBX","valid cases","2,880,548","2,880,548",TRUE
+"EBX","count in each of 9 categories","2,880,548 cases","2,880,548 cases",TRUE
+"C_HOUSE","valid cases","2,880,548","2,880,548",TRUE
+"C_HOUSE","count in each of 2 categories","2,880,548 cases","2,880,548 cases",TRUE
+"IN_HH","valid cases","2,880,548","2,880,548",TRUE
+"IN_HH","min","0","0",TRUE
+"IN_HH","max","91","91",TRUE
+"IN_HH","mean","0.4","0.381177",TRUE
+"IN_HH","sd","0.5","0.536247",TRUE
+"BACT","valid cases","2,880,548","2,880,548",TRUE
+"BACT","count in each of 23 categories","2,880,548 cases","2,880,548 cases",TRUE
+"NIC3","valid cases","2,880,548","2,880,548",TRUE
+"NIC3","count in each of 229 categories","2,880,548 cases","2,880,548 cases",TRUE
+"HLOOM_ACT","valid cases","2,880,548","2,880,548",TRUE
+"HLOOM_ACT","count in each of 2 categories","2,880,548 cases","2,880,548 cases",TRUE
+"OWN_SHIP_C","valid cases","2,880,548","2,880,548",TRUE
+"OWN_SHIP_C","count in each of 8 categories","2,880,548 cases","2,880,548 cases",TRUE
+"SEX","valid cases","2,880,548","2,880,548",TRUE
+"SEX","count in each of 4 categories","2,880,548 cases","2,880,548 cases",TRUE
+"SG","valid cases","2,880,548","2,880,548",TRUE
+"SG","count in each of 5 categories","2,880,548 cases","2,880,548 cases",TRUE
+"RELIGION","valid cases","2,880,548","2,880,548",TRUE
+"RELIGION","count in each of 9 categories","2,880,548 cases","2,880,548 cases",TRUE
+"NOP","valid cases","2,880,548","2,880,548",TRUE
+"NOP","count in each of 3 categories","2,880,548 cases","2,880,548 cases",TRUE
+"SOF","valid cases","2,880,548","2,880,548",TRUE
+"SOF","count in each of 6 categories","2,880,548 cases","2,880,548 cases",TRUE
+"M_H","valid cases","2,880,548","2,880,548",TRUE
+"M_H","min","0","0",TRUE
+"M_H","max","11,999","11,999",TRUE
+"M_H","mean","0.9","0.871717",TRUE
+"M_H","sd","21.6","21.6337",TRUE
+"F_H","valid cases","2,880,548","2,880,548",TRUE
+"F_H","min","0","0",TRUE
+"F_H","max","6,000","6,000",TRUE
+"F_H","mean","0.4","0.395178",TRUE
+"F_H","sd","10.5","10.5116",TRUE
+"M_NH","valid cases","2,880,548","2,880,548",TRUE
+"M_NH","min","0","0",TRUE
+"M_NH","max","99","99",TRUE
+"M_NH","mean","0.9","0.851939",TRUE
+"M_NH","sd","0.8","0.801368",TRUE
+"F_NH","valid cases","2,880,548","2,880,548",TRUE
+"F_NH","min","0","0",TRUE
+"F_NH","max","92","92",TRUE
+"F_NH","mean","0.4","0.361904",TRUE
+"F_NH","sd","0.8","0.764598",TRUE
+"TOTAL_WORKER","valid cases","2,880,548","2,880,548",TRUE
+"TOTAL_WORKER","min","1","1",TRUE
+"TOTAL_WORKER","max","14,160","14,160",TRUE
+"TOTAL_WORKER","mean","2.5","2.48074",TRUE
+"TOTAL_WORKER","sd","26.8","26.8402",TRUE
+"SECTOR","valid cases","2,880,548","2,880,548",TRUE
+"SECTOR","count in each of 2 categories","2,880,548 cases","2,880,548 cases",TRUE
+"District","valid cases","2,880,548","2,880,548",TRUE
+"District","count in each of 30 categories","2,880,548 cases","2,880,548 cases",TRUE

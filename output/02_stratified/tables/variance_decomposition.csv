@@ -1,0 +1,12 @@
+"Quantity","Value"
+"Variation of stratum means: sum W_h (Ybar_h - Ybar)^2",0.163974526705543
+"Population variance S^2",720.394950073786
+"Share of S^2 explained by the strata",0.000227617540473803
+"(1) V(SRS) - V(prop), by Cochran's formula",0.000218161203669971
+"     the same, computed directly",0.000218161203690226
+"     effect of rounding n_h to whole numbers",0.000509373634008159
+"Variation of stratum SDs: sum W_h (S_h - Sbar)^2",102.700508835599
+"(2) V(prop) - V(Neyman), by Cochran's formula",0.137300145502137
+"     the same, computed directly",0.137300145502137
+"RE proportional, unrounded allocation",1.00022663118095
+"RE Neyman, unrounded allocation",1.16662292305703

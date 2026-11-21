@@ -1,0 +1,7 @@
+"Design","RE, mean","RE, proportion","Cost and convenience"
+"SRSWOR","1.000","1.000","Needs the full list; units scattered across the state (high travel cost)"
+"SRSWR","1.000","1.000","As SRSWOR, and may visit the same unit twice"
+"Stratified (Proportional)","1.000","1.027","Needs the division of each unit (known); 4 separate random samples"
+"Stratified (Neyman)","1.167","0.799","Needs stratum SDs from a previous census; 4 separate random samples"
+"Systematic","1.009","1.121","One random number; easy to carry out on an ordered list; spread evenly over the state"
+"Cluster","0.337","0.042","Cheapest fieldwork: 27 compact areas, no full list needed, only lists of blocks"

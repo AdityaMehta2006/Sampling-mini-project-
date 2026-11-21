@@ -1,0 +1,7 @@
+"Comparison","Parameter","Based","Larger variance","F","df","p-value","Decision","Same direction as exact variances?"
+"SRSWOR vs Stratified (Neyman)","Mean","one sample each","SRSWOR",22.1556704862276,"(747, 744)",1.63769921742519e-293,"Reject H0: SRSWOR is less precise","yes"
+"SRSWOR vs Stratified (Neyman)","Proportion","one sample each","Stratified (Neyman)",1.19572246245389,"(744, 747)",0.00738355955324265,"Reject H0: Stratified (Neyman) is less precise","yes"
+"SRSWOR vs Systematic","Mean","one sample each","SRSWOR",57.2589518790317,"(747, 747)",0,"Reject H0: SRSWOR is less precise","yes"
+"SRSWOR vs Systematic","Proportion","one sample each","SRSWOR",1.05734265734266,"(747, 747)",0.223126570283625,"Do not reject H0","yes"
+"SRSWOR vs Cluster","Mean","one sample each","SRSWOR",193.044964190598,"(747, 26)",1.08399811842291e-25,"Reject H0: SRSWOR is less precise","NO"
+"SRSWOR vs Cluster","Proportion","one sample each","Cluster",6.73958286788256,"(26, 747)",3.18332142819216e-21,"Reject H0: Cluster is less precise","yes"

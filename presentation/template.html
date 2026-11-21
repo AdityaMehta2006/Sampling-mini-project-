@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- generated -->
+<meta charset="utf-8">
+<title>Sampling Techniques Mini-Project: Karnataka establishments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --navy: #1f3b63; --ink: #1d2433; --muted: #5b6577; --line: #d9dfea; --soft: #f3f6fb;
+    --m1: #4C72B0; --m2: #55A868; --m3: #C9822B; --m4: #C44E52; --m5: #8172B2;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #e9edf3; font-family: "DejaVu Sans", "Segoe UI", Arial, sans-serif; color: var(--ink); }
+  #deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+  .slide {
+    position: absolute; left: 50%; top: 50%; width: 1280px; height: 720px; margin: -360px 0 0 -640px;
+    background: #fff; box-shadow: 0 6px 30px rgba(20, 30, 50, .18); padding: 48px 64px 40px;
+    display: none; flex-direction: column; transform-origin: center center;
+  }
+  .slide.active { display: flex; }
+  .tag { display: inline-block; font-size: 15px; font-weight: 700; color: #fff; padding: 4px 12px; border-radius: 4px; letter-spacing: .3px; }
+  .t-all { background: var(--navy); } .t-m1 { background: var(--m1); } .t-m2 { background: var(--m2); }
+  .t-m3 { background: var(--m3); } .t-m4 { background: var(--m4); } .t-m5 { background: var(--m5); }
+  h1 { font-size: 40px; color: var(--navy); margin: 14px 0 6px; line-height: 1.15; }
+  h2 { font-size: 31px; color: var(--navy); margin: 12px 0 18px; line-height: 1.2; }
+  .sub { font-size: 20px; color: var(--muted); margin: 0 0 10px; }
+  .body { flex: 1; display: flex; gap: 36px; min-height: 0; }
+  .col { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .col.wide { flex: 1.45; }
+  ul { margin: 0; padding-left: 24px; font-size: 20px; line-height: 1.45; }
+  li { margin-bottom: 10px; }
+  li b, p b { color: var(--navy); }
+  img { max-width: 100%; max-height: 470px; object-fit: contain; display: block; margin: 0 auto; }
+  .cap { font-size: 14px; color: var(--muted); text-align: center; margin-top: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 17px; }
+  th { background: var(--navy); color: #fff; text-align: left; padding: 7px 10px; font-weight: 600; }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  tr:nth-child(even) td { background: var(--soft); }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.hl td { background: #fff4d6 !important; font-weight: 700; }
+  .big { font-size: 64px; font-weight: 800; color: var(--navy); line-height: 1; }
+  .kpis { display: flex; gap: 22px; margin: 6px 0 18px; }
+  .kpi { flex: 1; background: var(--soft); border-left: 5px solid var(--navy); padding: 14px 16px; }
+  .kpi .v { font-size: 34px; font-weight: 800; color: var(--navy); }
+  .kpi .l { font-size: 15px; color: var(--muted); margin-top: 4px; }
+  .take { margin-top: auto; background: #fff4d6; border-left: 5px solid #e0a800; padding: 12px 18px; font-size: 19px; }
+  .src { position: absolute; left: 64px; bottom: 14px; font-size: 12px; color: #8a93a3; }
+  .num { position: absolute; right: 28px; bottom: 14px; font-size: 13px; color: #8a93a3; }
+  .notes { display: none; position: absolute; left: 0; right: 0; bottom: 0; background: rgba(29, 36, 51, .94); color: #f2f4f8;
+    font-size: 17px; line-height: 1.45; padding: 16px 64px; }
+  body.show-notes .notes { display: block; }
+  .notes b { color: #ffd66b; }
+  .title-slide { justify-content: center; }
+  .title-slide h1 { font-size: 50px; }
+  .members { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 34px; }
+  .member { border-top: 6px solid; padding: 12px 10px; background: var(--soft); font-size: 16px; }
+  .member b { display: block; font-size: 18px; margin-bottom: 4px; color: var(--ink); }
+  #hint { position: fixed; bottom: 8px; left: 50%; transform: translateX(-50%); font-size: 12px; color: #6c7586; }
+  @media print {
+    @page { size: 1280px 720px; margin: 0; }
+    html, body { background: #fff; }
+    #deck { width: auto; height: auto; overflow: visible; }
+    .slide { display: flex !important; position: relative; left: 0; top: 0; margin: 0; box-shadow: none; transform: none !important;
+      page-break-after: always; break-after: page; }
+    .notes, #hint { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div id="deck">
+
+<!-- 1. Title -->
+<section class="slide title-slide">
+  <span class="tag t-all" style="align-self:flex-start">Sampling Techniques (STA405-6) · Group Mini-Project</span>
+  <h1>Design, Estimation and Efficiency Comparison of Sampling Techniques</h1>
+  <p class="sub" style="font-size:24px">All {{N}} establishments in Karnataka · Sixth Economic Census 2012-13 (MoSPI)</p>
+  <div class="members">
+    <div class="member" style="border-color:var(--m1)"><b>Member 1</b>SRSWOR &amp; SRSWR, sample size, data &amp; frame</div>
+    <div class="member" style="border-color:var(--m2)"><b>Member 2</b>Stratified sampling, allocation comparison</div>
+    <div class="member" style="border-color:var(--m3)"><b>Member 3</b>Systematic sampling, charts &amp; visuals</div>
+    <div class="member" style="border-color:var(--m4)"><b>Member 4</b>Cluster sampling, ICC &amp; efficiency, errors</div>
+    <div class="member" style="border-color:var(--m5)"><b>Member 5</b>Comparison, F-tests, official statistics</div>
+  </div>
+  <div class="notes"><b>Opening (Member 1, 15 s):</b> "Our project compares SRS, stratified, systematic and cluster sampling on real government data: every establishment in Karnataka from the Sixth Economic Census. Each of us will present one method; Member 5 compares them."</div>
+</section>
+
+<!-- 2. Overview -->
+<section class="slide">
+  <span class="tag t-all" style="align-self:flex-start">Survey design</span>
+  <h2>One population, one sample size, four designs</h2>
+  <div class="body">
+    <div class="col wide">
+      <table>
+        <tr><th>Element</th><th>Our choice</th></tr>
+        <tr><td>Population</td><td>All {{N}} establishments in Karnataka (EC6, 2012-13)</td></tr>
+        <tr><td>Variable Y</td><td>Persons employed per establishment (mean and total)</td></tr>
+        <tr><td>Proportion P</td><td>Share of establishments owned by a woman ({{P_pct}}%)</td></tr>
+        <tr><td>Sample size</td><td><b>n = {{n}}</b> for every method</td></tr>
+        <tr><td>Strata</td><td>4 revenue divisions</td></tr>
+        <tr><td>Systematic list</td><td>Ordered by district, tehsil, town, ward, block; k = {{k}}</td></tr>
+        <tr><td>Clusters</td><td>{{Nc}} enumeration blocks; {{n_c}} sampled</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <div class="kpis" style="flex-direction:column">
+        <div class="kpi"><div class="v">{{checks_pass}} / {{checks_total}}</div><div class="l">checks against MoSPI's official figures matched: the data is genuine</div></div>
+        <div class="kpi"><div class="v">{{Ybar}}</div><div class="l">true mean workers (median {{median}}, largest {{maxY}})</div></div>
+        <div class="kpi"><div class="v">{{P}}</div><div class="l">true proportion female-owned</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="src">Tables 0.1, 1.5, 1.6 · output/00_data_verification, output/01_srs</div>
+  <div class="notes"><b>Member 1 (20 s):</b> "Because we have the full census, we know the true values and can measure every design's real error. All designs use n = {{n}}, so the comparison is fair."</div>
+</section>
+
+<!-- ================= MEMBER 1 ================= -->
+<section class="slide">
+  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · Data and frame</span>
+  <h2>The data is extremely skewed, and that drives everything</h2>
+  <div class="body">
+    <div class="col wide"><img src="../output/01_srs/figures/distribution_of_workers.png" alt="Distribution of workers per establishment"><div class="cap">Figure 1.1</div></div>
+    <div class="col">
+      <ul>
+        <li><b>{{m1_single_pct}}%</b> of establishments have a single worker; a few have thousands.</li>
+        <li>Coefficient of variation = <b>{{m1_cv}}</b>.</li>
+        <li>Data cleaning: no missing values, no zero workers; totals always add up.</li>
+        <li>Possible recording errors: <b>{{m1_suspect}}</b> single-owner businesses report 10,000+ workers ({{m1_exact}} exactly 10,001 or 10,002). Kept as official, but flagged.</li>
+      </ul>
+      <div class="take">Skewness makes the <b>mean</b> hard to estimate; the proportion is well-behaved.</div>
+    </div>
+  </div>
+  <div class="src">Tables 1.1-1.4, Figure 1.1 · output/01_srs</div>
+  <div class="notes"><b>Say:</b> "Figure 1.1 shows the key problem: {{m1_single_pct}}% of establishments have one worker, but a few employ thousands. We cleaned and checked the data and found {{m1_suspect}} suspicious values of about 10,000 workers for single-owner businesses. We kept them, as official data, and showed they change the SD from {{m1_sd_wo}} to {{m1_sd_all}}."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · Sample size</span>
+  <h2>n = {{n}}, fixed by the precision required for P</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Step</th><th class="n">Value</th></tr>
+        <tr><td>Margin of error d for P (95%)</td><td class="n">{{m1_d}}</td></tr>
+        <tr><td>n<sub>0</sub> = z²PQ / d²</td><td class="n">{{m1_n0}}</td></tr>
+        <tr><td>n = n<sub>0</sub> / (1 + (n<sub>0</sub> - 1)/N)</td><td class="n">{{m1_nreq}}</td></tr>
+        <tr class="hl"><td>Chosen n (smallest divisor of N ≥ {{m1_nreq}})</td><td class="n">{{m1_nchosen}}</td></tr>
+        <tr><td>k = N / n</td><td class="n">{{k}}</td></tr>
+        <tr><td>Margin achieved for P</td><td class="n">{{m1_dach}}</td></tr>
+        <tr><td>n needed for the MEAN within 10%</td><td class="n">{{m1_nmean10}}</td></tr>
+      </table>
+      <div class="take">{{n}} × {{k}} = {{N}} exactly, as systematic sampling (N = nk) requires.</div>
+    </div>
+    <div class="col"><img src="../output/01_srs/figures/sample_size_curve.png" alt="Sample size curve"><div class="cap">Figure 1.2</div></div>
+  </div>
+  <div class="src">Table 1.7, Figure 1.2 · output/01_srs</div>
+  <div class="notes"><b>Say:</b> "To estimate P within {{m1_d}} we need {{m1_nreq}} establishments. We use {{n}}, because {{n}} times {{k}} equals N exactly, which systematic sampling needs. The mean would need {{m1_nmean10}} units for 10% precision, so we fix n by the proportion."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m1" style="align-self:flex-start">Member 1 · Unit 1 · SRSWOR vs SRSWR</span>
+  <h2>Both CIs contain the truth; the two schemes are practically equal</h2>
+  <div class="body">
+    <div class="col wide">
+      <table>
+        <tr><th>Design</th><th>Parameter</th><th class="n">Estimate</th><th class="n">SE</th><th class="n">95% CI</th><th class="n">Exact SE</th></tr>
+{{m1_srs_rows}}
+      </table>
+      <p class="sub" style="font-size:16px;margin-top:10px">True mean {{Ybar}} · true P {{P}} · fpc = 1 - n/N = {{m1_fpc}}</p>
+      <ul>
+        <li>V(SRSWR) / V(SRSWOR) = (N-1)/(N-n) = <b>{{m1_ratio}}</b>: only {{m1_ratio_pct}}% worse.</li>
+        <li>A single sample's SE depends on whether it caught a very large establishment; the <b>exact SE</b> ({{m1_exact_se}}) is the same for both.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/01_srs/figures/srs_confidence_intervals.png" alt="SRS confidence intervals"><div class="cap">Figure 1.3</div></div>
+  </div>
+  <div class="src">Tables 1.8-1.11, Figure 1.3 · output/01_srs</div>
+  <div class="notes"><b>Say:</b> "Both confidence intervals contain the true values. The two SEs for the mean differ only because of which establishments each sample happened to include; the exact SE is {{m1_exact_se}} for both. SRSWR is only {{m1_ratio_pct}}% less precise, because n is a tiny fraction of N."</div>
+</section>
+
+<!-- ================= MEMBER 2 ================= -->
+<section class="slide">
+  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · Strata and allocation</span>
+  <h2>Four revenue divisions: means similar, SDs very different</h2>
+  <div class="body">
+    <div class="col wide">
+      <table>
+        <tr><th>Stratum</th><th class="n">N<sub>h</sub></th><th class="n">Mean</th><th class="n">SD S<sub>h</sub></th><th class="n">P<sub>h</sub></th><th class="n">n<sub>h</sub> prop.</th><th class="n">n<sub>h</sub> Neyman</th></tr>
+{{m2_strata_rows}}
+      </table>
+      <ul style="margin-top:16px">
+        <li>Proportional: n<sub>h</sub> = n N<sub>h</sub>/N &nbsp;·&nbsp; Neyman: n<sub>h</sub> = n N<sub>h</sub>S<sub>h</sub> / Σ N<sub>h</sub>S<sub>h</sub></li>
+        <li>Neyman moves units to the <b>large and variable</b> strata.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/02_stratified/figures/allocation.png" alt="Allocation"><div class="cap">Figure 2.2</div></div>
+  </div>
+  <div class="src">Tables 2.1-2.2, Figure 2.2 · output/02_stratified</div>
+  <div class="notes"><b>Say:</b> "I stratified by Karnataka's four revenue divisions; every establishment's division is known in advance. The means are close, {{m2_mean_range}}, but the SDs range from {{m2_sd_range}}. Neyman allocation uses that and gives Bengaluru {{m2_blr_ney}} units instead of {{m2_blr_prop}}."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · Gain in precision</span>
+  <h2>Neyman gains {{m2_gain_ney}}% for the mean; proportional gains nothing</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Parameter</th><th class="n">RE proportional</th><th class="n">RE Neyman</th></tr>
+        <tr><td>Mean</td><td class="n">{{m2_re_prop_mean}}</td><td class="n"><b>{{m2_re_ney_mean}}</b></td></tr>
+        <tr><td>Proportion</td><td class="n">{{m2_re_prop_p}}</td><td class="n">{{m2_re_ney_p}}</td></tr>
+      </table>
+      <p class="sub" style="font-size:15px;margin-top:6px">RE = V(SRSWOR) / V(design), exact variances</p>
+      <ul style="margin-top:8px">
+        <li>V<sub>SRS</sub> - V<sub>prop</sub> ≈ (1-f)/n · Σ W<sub>h</sub>(Ȳ<sub>h</sub> - Ȳ)²: strata explain only <b>{{m2_share_pct}}%</b> of S², so no gain.</li>
+        <li>V<sub>prop</sub> - V<sub>Ney</sub> = (1/n) · Σ W<sub>h</sub>(S<sub>h</sub> - S̄)² = <b>{{m2_vdiff}}</b>: SDs differ, so Neyman gains.</li>
+        <li>Neyman (optimised for the mean) is <b>worse for P</b>; the allocation optimal for P gives RE {{m2_re_neyP}}.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/02_stratified/figures/boxplot_by_stratum.png" alt="Boxplot by stratum"><div class="cap">Figure 2.1</div></div>
+  </div>
+  <div class="src">Tables 2.3-2.7, Figure 2.1 · output/02_stratified</div>
+  <div class="notes"><b>Say:</b> "Figure 2.1 shows why the gain is limited: inside every division most businesses have one or two workers and a few have thousands. Cochran's formulas explain the results exactly: proportional gains come from different means, and here they barely differ; Neyman's extra gain comes from different SDs, {{m2_gain_ney}}% here. Neyman was optimised for the mean, so it is worse for the proportion."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m2" style="align-self:flex-start">Member 2 · Unit 2 · ANOVA and basis of stratification</span>
+  <h2>ANOVA: H<sub>0</sub> all stratum means equal (5% level)</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Test (proportional sample, n = {{n}})</th><th class="n">Statistic</th><th class="n">p-value</th></tr>
+        <tr><td>One-way ANOVA, F(3, 744)</td><td class="n">{{m2_F}}</td><td class="n">{{m2_p}}</td></tr>
+        <tr><td>Kruskal-Wallis (no normality needed)</td><td class="n">{{m2_kw}}</td><td class="n">{{m2_kw_p}}</td></tr>
+      </table>
+      <ul style="margin-top:14px">
+        <li>ANOVA: <b>{{m2_decision}}</b>. Normality fails (skewness {{m2_skew}}), and a few huge values hide the differences.</li>
+        <li>Kruskal-Wallis on ranks: <b>{{m2_kw_decision}}</b>.</li>
+        <li>Extra: <b>activity type</b> is the better basis for P (RE {{m2_act_re_p}}; female ownership {{m2_act_range}}).</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/02_stratified/figures/stratum_means_and_proportions.png" alt="Stratum means and proportions"><div class="cap">Figure 2.3</div></div>
+  </div>
+  <div class="src">Tables 2.8-2.11, Figure 2.3 · output/02_stratified</div>
+  <div class="notes"><b>Say:</b> "The ANOVA on my sample gives F = {{m2_F}}, p = {{m2_p}}, so I {{m2_decision}}: ANOVA assumes normal data, and a few huge values inflate the within-group variance. The Kruskal-Wallis test, which uses ranks, gives p = {{m2_kw_p}}, so I {{m2_kw_decision}}. As an extra, activity type would be a better basis for the proportion."</div>
+</section>
+
+<!-- ================= MEMBER 3 ================= -->
+<section class="slide">
+  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Systematic sample</span>
+  <h2>k = {{k}}, random start r = {{m3_r}}, and all {{k}} possible samples</h2>
+  <div class="body">
+    <div class="col">
+      <ul>
+        <li>List ordered by location code; every {{k}}th establishment from r = {{m3_r}}.</li>
+        <li>Our sample: mean <b>{{m3_mean}}</b> (SE {{m3_mean_se}}), P <b>{{m3_p}}</b> (SE {{m3_p_se}}).</li>
+        <li>Average of all {{k}} sample means = true value exactly, so the estimator is <b>unbiased</b>.</li>
+        <li>CIs containing the truth: <b>{{m3_cover_mean}}%</b> for the mean, <b>{{m3_cover_p}}%</b> for P.</li>
+      </ul>
+      <div class="take">The mean's CIs fail because most samples miss the rare giant establishments.</div>
+    </div>
+    <div class="col wide"><img src="../output/03_systematic/figures/all_starts_histogram.png" alt="All starting points"><div class="cap">Figure 3.1</div></div>
+  </div>
+  <div class="src">Tables 3.1-3.3, Figure 3.1 · output/03_systematic</div>
+  <div class="notes"><b>Say:</b> "With N = {{N}} and n = {{n}} the interval is exactly {{k}}; our random start was {{m3_r}}. There are only {{k}} possible samples, so I calculated all of them. Figure 3.1 shows they average exactly to the true value, so the estimator is unbiased."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Comparison and ANOVA</span>
+  <h2>Best design for the proportion: {{m3_gain_p}}% better than SRS</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Design</th><th class="n">RE mean</th><th class="n">RE proportion</th></tr>
+{{m3_cmp_rows}}
+      </table>
+      <ul style="margin-top:14px">
+        <li>ANOVA, samples as groups: F = {{m3_F_mean}} (p = {{m3_p_mean}}) and F = {{m3_F_prop}} (p = {{m3_p_prop}}), so <b>do not reject H<sub>0</sub></b>: the start doesn't matter.</li>
+        <li>Each sample spans the whole state, a fine <b>implicit stratification</b> by location.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/03_systematic/figures/mean_by_start.png" alt="Mean by start"><div class="cap">Figure 3.2: no trend or periodicity</div></div>
+  </div>
+  <div class="src">Tables 3.4-3.7, Figure 3.2 · output/03_systematic</div>
+  <div class="notes"><b>Say:</b> "Systematic sampling is {{m3_gain_p}}% more efficient than SRS for the proportion, better than stratifying by division, because walking down a location-ordered list spreads the sample over every district and town. The ANOVA confirms the starting point doesn't matter, and Figure 3.2 shows no trend or periodic pattern."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m3" style="align-self:flex-start">Member 3 · Unit 3 · Effect of k and of list order</span>
+  <h2>The order of the list is part of the design</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>List order</th><th class="n">RE mean</th><th class="n">RE proportion</th></tr>
+{{m3_order_rows}}
+      </table>
+      <ul style="margin-top:14px">
+        <li>On a shuffled list, systematic is just SRS.</li>
+        <li>For P, systematic beats SRS at every k tried (RE {{m3_k_range}}).</li>
+        <li>For the mean, RE stays close to 1 for every k.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/03_systematic/figures/effect_of_k.png" alt="Effect of k"><div class="cap">Figure 3.3</div></div>
+  </div>
+  <div class="src">Tables 3.8-3.9, Figure 3.3 · output/03_systematic</div>
+  <div class="notes"><b>Say:</b> "On a randomly shuffled list the advantage disappears, so the gain comes from the order of the list. Sorting by activity would help the proportion even more. Changing k changes the sample size, but systematic stays better than SRS for the proportion."</div>
+</section>
+
+<!-- ================= MEMBER 4 ================= -->
+<section class="slide">
+  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · Clusters</span>
+  <h2>{{n_c}} enumeration blocks, every establishment in them</h2>
+  <div class="body">
+    <div class="col">
+      <div class="kpis">
+        <div class="kpi"><div class="v">{{Nc}}</div><div class="l">blocks in Karnataka</div></div>
+        <div class="kpi"><div class="v">{{m4_Mbar}}</div><div class="l">establishments per block</div></div>
+        <div class="kpi"><div class="v">{{n_c}}</div><div class="l">blocks sampled (≈ {{m4_units}} units)</div></div>
+      </div>
+      <table>
+        <tr><th>Ratio estimator</th><th class="n">Estimate</th><th class="n">SE</th><th class="n">Exact SE</th><th class="n">True</th></tr>
+{{m4_cl_rows}}
+      </table>
+      <p class="sub" style="font-size:16px;margin-top:10px">ȳ = Σy<sub>i</sub> / ΣM<sub>i</sub> · CI uses t with {{m4_df}} df · fpc = {{m4_fpc}}</p>
+    </div>
+    <div class="col"><img src="../output/04_cluster/figures/cluster_sizes.png" alt="Cluster sizes"><div class="cap">Figure 4.1: unequal sizes, hence the ratio estimator</div></div>
+  </div>
+  <div class="src">Tables 4.1-4.3, Figure 4.1 · output/04_cluster</div>
+  <div class="notes"><b>Say:</b> "My clusters are census enumeration blocks: {{Nc}} of them, about {{m4_Mbar}} establishments each. I sampled {{n_c}} blocks and took every establishment in them. Block sizes vary from 1 to {{m4_maxM}}, so I used the ratio estimator, total workers divided by total establishments."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · ANOVA and intraclass correlation</span>
+  <h2>Businesses in the same block are alike: ICC = {{m4_icc_p2}} for P</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th></th><th class="n">Workers</th><th class="n">Female-owned</th></tr>
+        <tr><td>ANOVA F (p)</td><td class="n">{{m4_F_y}}</td><td class="n">{{m4_F_p}}</td></tr>
+        <tr class="hl"><td>ICC ρ</td><td class="n">{{m4_icc_y}}</td><td class="n">{{m4_icc_p}}</td></tr>
+        <tr><td>deff, formula 1 + (M̄-1)ρ</td><td class="n">{{m4_deff_f_y}}</td><td class="n">{{m4_deff_f_p}}</td></tr>
+        <tr><td>deff, actual</td><td class="n">{{m4_deff_a_y}}</td><td class="n">{{m4_deff_a_p}}</td></tr>
+        <tr class="hl"><td>RE vs SRS</td><td class="n">{{m4_re_y}}</td><td class="n">{{m4_re_p}}</td></tr>
+      </table>
+      <ul style="margin-top:14px">
+        <li><b>Reject H<sub>0</sub></b> (no clustering) for both variables.</li>
+        <li>ρ = (MSB - MSW) / (MSB + (m<sub>0</sub>-1)MSW).</li>
+        <li>A block of {{m4_Mbar}} is worth about <b>{{m4_worth}}</b> independent establishment(s) for P.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/04_cluster/figures/female_share_by_cluster.png" alt="Female share by block"><div class="cap">Figure 4.2</div></div>
+  </div>
+  <div class="src">Tables 4.4-4.6, Figure 4.2 · output/04_cluster</div>
+  <div class="notes"><b>Say:</b> "The ANOVA across all blocks gives an intraclass correlation of {{m4_icc_p2}} for female ownership: businesses in the same block are alike, as Figure 4.2 shows. So the design effect is about {{m4_deff_a_p}}, and cluster sampling is only {{m4_re_p_pct}}% as efficient as SRS for the proportion, {{m4_re_y_pct}}% for the mean."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m4" style="align-self:flex-start">Member 4 · Unit 4 · Cluster size and errors</span>
+  <h2>Bigger clusters, bigger loss; chosen for cost, not precision</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Cluster</th><th class="n">Avg size</th><th class="n">deff for P</th></tr>
+{{m4_size_rows}}
+      </table>
+      <ul style="margin-top:14px">
+        <li>Fewer, bigger clusters cannot represent the state (Bengaluru city alone is one "town").</li>
+        <li><b>Non-sampling errors:</b> excluded activities (crop production, public administration), missed informal units, recording errors (10,001 workers), owner's sex missing for {{m4_nonprop_pct}}% of establishments (non-proprietary).</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/04_cluster/figures/design_effect_by_cluster_size.png" alt="Design effect by cluster size"><div class="cap">Figure 4.3</div></div>
+  </div>
+  <div class="src">Tables 4.7-4.8, Figure 4.3 · output/04_cluster · TEAM/member4_cluster.md §8</div>
+  <div class="notes"><b>Say:</b> "Figure 4.3 shows that bigger clusters, like wards or whole towns, are far worse. Cluster sampling is chosen for low cost: {{n_c}} compact blocks instead of {{n}} scattered addresses. The main non-sampling errors we found are excluded activities, probable recording errors and the definition of owner's sex."</div>
+</section>
+
+<!-- ================= MEMBER 5 ================= -->
+<section class="slide">
+  <span class="tag t-m5" style="align-self:flex-start">Member 5 · Comparison of designs</span>
+  <h2>Systematic best for P; Neyman best for the mean; cluster worst</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>Design</th><th class="n">Mean (abs. error)</th><th class="n">P (abs. error)</th><th class="n">RE mean</th><th class="n">RE P</th></tr>
+{{m5_master_rows}}
+      </table>
+      <p class="sub" style="font-size:15px;margin-top:8px">True mean {{Ybar}} · true P {{P}} · full table with SE and CI: Table 5.1</p>
+    </div>
+    <div class="col"><img src="../output/05_comparison/figures/relative_efficiency.png" alt="Relative efficiency"><div class="cap">Figure 5.2</div></div>
+  </div>
+  <div class="src">Table 5.1, Figure 5.2 · output/05_comparison</div>
+  <div class="notes"><b>Say:</b> "Table 5.1 compares all six designs at about {{n}} establishments each. For the proportion systematic sampling is most efficient, {{m5_gain_best_p}}% better than SRS; for the mean Neyman stratification is best, {{m5_gain_best_m}}% better. Cluster sampling is far worse, because businesses in the same block are alike."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m5" style="align-self:flex-start">Member 5 · F-tests and 500-repeat simulation</span>
+  <h2>F-tests work for P; for the mean, normality fails</h2>
+  <div class="body">
+    <div class="col">
+      <table>
+        <tr><th>500 repeats, F(499, 499), proportion</th><th class="n">F (p)</th><th class="n">Agrees with exact?</th></tr>
+{{m5_f_rows}}
+      </table>
+      <ul style="margin-top:12px">
+        <li>H<sub>0</sub>: equal variances · H<sub>1</sub>: the larger is less precise · 5% level.</li>
+        <li>P: simulated SE within {{m5_se_within}}% of exact; CIs cover <b>{{m5_cov_p}}%</b> (cluster {{m5_cov_p_cl}}%).</li>
+        <li>Mean: estimates very skewed, CIs cover only <b>{{m5_cov_mean}}%</b>; {{m5_wrong}} points the wrong way.</li>
+      </ul>
+    </div>
+    <div class="col"><img src="../output/05_comparison/figures/simulation_proportion.png" alt="Simulation proportion"><div class="cap">Figure 5.4: 500 estimates of P per design</div></div>
+  </div>
+  <div class="src">Tables 5.2-5.4, Figures 5.3-5.4 · output/05_comparison</div>
+  <div class="notes"><b>Say:</b> "We repeated every design 500 times. For the proportion the variance formulas are confirmed and every F-test agrees with the exact variances. For the mean the estimates are so skewed that the F-test's normality assumption fails; {{m5_wrong}} points the wrong way. That shows why the assumption matters."</div>
+</section>
+
+<section class="slide">
+  <span class="tag t-m5" style="align-self:flex-start">Member 5 · Recommendation and official statistics</span>
+  <h2>Recommendation: systematic sampling on the location-ordered list</h2>
+  <div class="body">
+    <div class="col">
+      <ul>
+        <li><b>Precision:</b> best for P (RE {{m5_re_best_p}}), as good as SRS for the mean (RE {{m5_re_sys_mean}}).</li>
+        <li><b>Cost:</b> one random number, then every {{k}}th establishment.</li>
+        <li><b>Convenience:</b> automatically spread over every district.</li>
+        <li>If the mean matters most: Neyman stratified. Cluster: cheapest, least precise (RE {{m5_re_cl_p}} for P).</li>
+      </ul>
+    </div>
+    <div class="col">
+      <table>
+        <tr><th colspan="2">Official statistics link: Sixth Economic Census</th></tr>
+        <tr><td>Agency</td><td>CSO, MoSPI, with State DES</td></tr>
+        <tr><td>Design</td><td>Complete count, no sampling</td></tr>
+        <tr><td>Collection</td><td>Face-to-face, every structure in 2.45 million census EBs, Jan 2013-Apr 2014</td></tr>
+        <tr><td>Purpose</td><td>A frame for follow-up sample surveys (NSS)</td></tr>
+        <tr><td>Limits</td><td>Excludes crop production, plantation and public administration; misses informal units</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="src">Table 5.5 · official facts from the MoSPI EC6 documentation on the census DVD</div>
+  <div class="notes"><b>Say:</b> "We recommend systematic sampling from the location-ordered census list: precise for the proportion, as good as SRS for the mean, and simple and cheap. Our data comes from the Economic Census by MoSPI's CSO, a complete count used as the frame for official sample surveys, which is exactly how we used it."</div>
+</section>
+
+<!-- Close -->
+<section class="slide">
+  <span class="tag t-all" style="align-self:flex-start">Conclusion</span>
+  <h2>What we learned</h2>
+  <div class="body">
+    <div class="col">
+      <ul style="font-size:22px">
+        <li>A design helps only if it uses structure in the data: stratification needs different groups, systematic needs a meaningful order, and clustering suffers when groups are internally alike.</li>
+        <li>With extremely skewed data (median {{median}}, max {{maxY}}) no design estimates the mean much better than SRS; the proportion is easy.</li>
+        <li>Single-sample SEs and F-tests can mislead with skewed data; exact variances and simulation reveal the truth.</li>
+        <li>Recommended: <b>systematic sampling</b> on the location-ordered census list.</li>
+      </ul>
+    </div>
+    <div class="col" style="flex:.7;justify-content:center;align-items:center;text-align:center">
+      <div class="big">Thank you</div>
+      <p class="sub" style="margin-top:14px">Questions?</p>
+      <p class="sub" style="font-size:15px">Code, tables and figures: analysis/ and output/</p>
+    </div>
+  </div>
+  <div class="notes"><b>Member 5 closes (20 s):</b> "In short: designs help only when they match the structure of the data. For this population we recommend systematic sampling. Thank you, and we're happy to take questions."</div>
+</section>
+
+</div>
+<div id="hint">← → to move · N to show speaker notes · F for full screen</div>
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  slides.forEach((s, i) => {
+    const n = document.createElement('div');
+    n.className = 'num';
+    n.textContent = (i + 1) + ' / ' + slides.length;
+    s.appendChild(n);
+  });
+  let cur = Math.max(0, Math.min(slides.length - 1, (parseInt(location.hash.slice(1), 10) || 1) - 1));
+  function fit() {
+    const k = Math.min(window.innerWidth / 1300, window.innerHeight / 740);
+    slides.forEach(s => s.style.transform = 'scale(' + k + ')');
+  }
+  function show(i) {
+    cur = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach((s, j) => s.classList.toggle('active', j === cur));
+    history.replaceState(null, '', '#' + (cur + 1));
+  }
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); show(cur + 1); }
+    if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); show(cur - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+    if (e.key === 'n' || e.key === 'N') document.body.classList.toggle('show-notes');
+    if (e.key === 'f' || e.key === 'F') {
+      if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen();
+    }
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('a')) show(cur + (e.clientX > innerWidth / 2 ? 1 : -1)); });
+  window.addEventListener('resize', fit);
+  fit();
+  show(cur);
+</script>
+</body>
+</html>

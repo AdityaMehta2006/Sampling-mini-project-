@@ -1,0 +1,6 @@
+"Quantity","Value"
+"P(a specified establishment is selected), SRSWOR = n / N",0.000259672812256557
+"P(a specified establishment is selected at least once), SRSWR = 1 - (1 - 1/N)^n",0.000259639145273272
+"P(a specified establishment is selected at a given draw) = 1 / N (both schemes)",0.000000347156166118391
+"Expected distinct establishments in SRSWR = N [1 - (1 - 1/N)^n]",747.903020638632
+"Distinct establishments in our SRSWR sample",748

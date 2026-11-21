@@ -1,0 +1,10 @@
+"Quantity","Mean workers","Proportion female-owned"
+"MSB (between clusters)",1461.67307741141,1.33500247353884
+"MSW (within clusters)",692.179395469847,0.108608292476754
+"m0 (adjusted average cluster size)",27.2713369035622,27.2713369035622
+"Intraclass correlation rho",0.0391676555446319,0.292815184358791
+"Design effect by formula 1 + (Mbar - 1) rho",2.02900162268549,8.69275811029344
+"Actual design effect V(cluster, ratio) / V(SRS, same n)",2.92428345575038,23.7164872464844
+"Relative efficiency vs SRS = 1 / actual deff",0.341964113647593,0.0421647603039626
+"Actual design effect, unbiased estimator",3.35216701662129,32.8015606546438
+"Relative efficiency, unbiased estimator",0.298314491802356,0.0304863543088285

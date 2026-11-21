@@ -1,0 +1,7 @@
+"Quantity","Mean workers","Proportion female-owned"
+"Within-sample variance S^2_wsy (= MSW)",720.403754073645,0.153599451111431
+"Population variance S^2",720.394950073786,0.153577332241188
+"Ratio S^2_wsy / S^2",1.00001222107381,1.00014402431609
+"Intraclass correlation within samples rho_w",-0.0000125682343409865,-0.000144371522377784
+"V(ybar_sy) from the ANOVA formula",0.954052533685626,0.000183174674213499
+"V(ybar_sy) from the k sample means",0.954052533685701,0.000183174674213475

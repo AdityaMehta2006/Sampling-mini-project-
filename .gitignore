@@ -5,3 +5,17 @@ dataset_archives/
 r_libs/
 .DS_Store
 
+# Raw export of the Nesstar file (300 MB) - rebuilt by analysis/00_data_verification.R
+data/*.csv
+
+# Personal notes, kept on each member's own computer
+local/
+
+# R and editor leftovers
+.Rhistory
+.RData
+.Rproj.user/
+.remember/
+
+# Intermediate results passed between scripts (rebuilt by analysis/run_all.R)
+output/_shared/

@@ -1,0 +1,7 @@
+"Quantity","Value"
+"Population size N","2,880,548"
+"Sample size n","748"
+"Sampling interval k = N / n","3,851"
+"Random start r (1 to k)","975"
+"Selected unit numbers","975, 4,826, 8,677, 12,528, ..., 2,877,672"
+"Number of possible systematic samples (= k)","3,851"
