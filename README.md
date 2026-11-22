@@ -19,6 +19,7 @@ Data source: https://microdata.gov.in/NADA/index.php/catalog/47/get-microdata
 | If you want to... | Open |
 |---|---|
 | Know your role and what to prepare for the viva | [TEAM/README.md](TEAM/README.md), then your own note in [TEAM/](TEAM) (PDFs in [TEAM/pdf/](TEAM/pdf)) |
+| **Submit the group report** | [Sampling_Techniques_Group_Report.pdf](Sampling_Techniques_Group_Report.pdf): the full report (18 pages + annexure), checked against the rubric in [reports/rubric_check.md](reports/rubric_check.md) |
 | Get your individual report | [reports/](reports): one PDF per person, names already filled in |
 | Present | [presentation/slides.html](presentation/slides.html) (PDF: [presentation/slides.pdf](presentation/slides.pdf)) |
 | Read all results in one file | [output/all_results.pdf](output/all_results.pdf) |
@@ -29,11 +30,12 @@ Data source: https://microdata.gov.in/NADA/index.php/catalog/47/get-microdata
 ## Folders
 
 ```
-analysis/      R code, numbered in run order (00 to 07) + run_all.R
+analysis/      R code, numbered in run order (00 to 08) + run_all.R
 data/          frame_karnataka.rds: the cleaned list of all 2.88 million establishments
 output/        one folder per script: a PDF report, figures, tables (CSV) and selected samples
 presentation/  slides.html (built from template.html by analysis/06_slides.R) and slides.pdf
-reports/       one report per person (built by analysis/07_reports.R; cover in template/)
+reports/       one report per person (analysis/07_reports.R), the rubric check, cover templates
+Sampling_Techniques_Group_Report.pdf   the group report (analysis/08_group_report.R)
 TEAM/          one note per person: what to say, formulas, results, viva questions and answers
 ```
 

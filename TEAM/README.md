@@ -10,6 +10,10 @@ Each person has one note in this folder. Read this page first, then your own not
 | Abhinaba Das | 2440203 | Cluster sampling (Unit 4) | ICC and efficiency, sampling and non-sampling errors | [cluster.md](cluster.md) | [output/04_cluster](../output/04_cluster/README.md) |
 | Akash Kumar | 2440206 | Comparison of designs | F-tests, simulation, official statistics link, report compilation | [comparison.md](comparison.md) | [output/05_comparison](../output/05_comparison/README.md) |
 
+## The group report
+
+**[Sampling_Techniques_Group_Report.pdf](../Sampling_Techniques_Group_Report.pdf)** (project root) is the one report the assignment asks for. It has every member's name, register number and role on page 1, the required sections in order, and each section names who prepared it. `analysis/08_group_report.R` builds it from the verified results and checks it against the rubric; the result is in [reports/rubric_check.md](../reports/rubric_check.md).
+
 ## Your individual report
 
 Download your PDF from [reports/](../reports):

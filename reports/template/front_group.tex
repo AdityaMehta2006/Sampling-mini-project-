@@ -1,0 +1,47 @@
+% =============================================================================
+% front_group.tex — cover page of the group report (department format).
+% Built by analysis/08_group_report.R, which fills in the logo path and the team rows
+% (names, register numbers and roles come from TEAM in analysis/common.R).
+% The assignment asks for each member's role on the first page: the table below.
+% =============================================================================
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}            % Times New Roman look, as in the department template
+\usepackage{graphicx}
+\usepackage{array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+\vspace*{0.3cm}
+\includegraphics[width=10.5cm]{@@LOGO@@}
+
+\vspace{1.4cm}
+{\fontsize{18}{24}\selectfont Design, Estimation and Efficiency Comparison of\\
+Sampling Techniques on a Real Dataset\par}
+\vspace{0.25cm}
+{\fontsize{13}{17}\selectfont Establishments in Karnataka, Sixth Economic Census 2012--13\par}
+
+\vspace{1.0cm}
+{\fontsize{15}{20}\selectfont by\par}
+\vspace{0.5cm}
+{\fontsize{11.5}{15}\selectfont
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{|>{\raggedright\arraybackslash}m{3.3cm}|>{\centering\arraybackslash}m{2.2cm}|>{\raggedright\arraybackslash}m{8.3cm}|}
+\hline
+\textbf{Name} & \textbf{Register No.} & \textbf{Role in the project} \\ \hline
+@@TEAM_ROWS@@
+\end{tabular}\par}
+
+\vfill
+{\fontsize{12}{17}\selectfont
+Course: Sampling Techniques (STA405-6)\\[8pt]
+A Project report submitted in partial fulfilment of the requirements of\\
+VI Semester B.Sc. (Computer and Statistics)\\
+CHRIST (Deemed to be University)\\[2pt]
+November 2026\par}
+\vspace*{0.2cm}
+\end{center}
+\end{document}

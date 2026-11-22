@@ -30,6 +30,13 @@ K_SYS <- 3851 # sampling interval k, since N = n k = 748 x 3851
 TEAM <- data.frame(
   name = c("K Suraj Das", "Rithesh K R", "Aditya Mehta", "Abhinaba Das", "Akash Kumar"),
   reg = c("2440224", "2440233", "2440204", "2440203", "2440206"),
+  role = c(
+    "Unit 1: SRSWOR and SRSWR, sample size; data cleaning and frame preparation",
+    "Unit 2: Stratified sampling; allocation comparison",
+    "Unit 3: Systematic sampling; charts and visuals",
+    "Unit 4: Cluster sampling; intraclass correlation and efficiency; sampling and non-sampling errors",
+    "Comparison of designs, F-tests and simulation; official statistics link; report compilation"
+  ),
   stringsAsFactors = FALSE
 )
 

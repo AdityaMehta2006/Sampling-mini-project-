@@ -15,7 +15,8 @@ scripts <- c(
   "04_cluster.R", # cluster sampling
   "05_comparison.R", # comparison, F-tests, simulation
   "06_slides.R", # presentation built from the verified results
-  "07_reports.R" # one PDF report per person (needs pdflatex, Chrome, qpdf)
+  "07_reports.R", # one PDF report per person (needs pdflatex, Chrome, qpdf)
+  "08_group_report.R" # the group report in the project root, with the rubric check
 )
 
 for (s in scripts) {

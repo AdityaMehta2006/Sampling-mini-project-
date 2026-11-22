@@ -145,16 +145,14 @@ A: Neyman-allocated stratified sampling (RE 1.17). Even better would be strata b
 
 **8.8 How it links to our project.** Official surveys use the Economic Census exactly as we did: as a frame for sampling. NSS enterprise surveys, such as the 73rd round (2015-16) on unincorporated non-agricultural enterprises, use stratified multi-stage designs with villages and urban blocks as first-stage units. Our results show why: stratification and ordering the list by location improve precision, while sampling whole areas (clusters) is cheap but loses precision when units in an area are alike.
 
-## 9. Compiling the report (from the assignment)
+## 9. Compiling the report
 
-- **Length:** 15-20 pages. **First page:** title, member names and register numbers, and each member's role (use the table in [TEAM/README.md](README.md)).
-- **Sections, in this order:** Introduction, Population and Frame, Method-wise Analysis (Units 1-4), Comparison and Interpretation, Errors, Official Statistics Link, Conclusion, References.
-- **Page budget (suggested):** Introduction + frame 2; each unit 2.5 (10 total); comparison 2.5; errors 1; official statistics 2; conclusion + references 1.
-- **Tables and figures:** take them from each member's PDF (`output/NN_name/NN_name.pdf`) or the PNG files in `figures/`. Keep the table numbers.
-- **References** (at least 3, at least 2 official):
-  1. MoSPI, Central Statistics Office. *All India Report of Sixth Economic Census* [check the year on the cover; the file is dated 2016]. Government of India. (On the DVD: `data/REPORTS/EC6_ALL_INDIA_REPORT_PUBLISHED_BY_ESD_CSO.pdf`)
-  2. MoSPI. *Instruction Manual, Sixth Economic Census 2012-2013* [check the year on the cover]. (On the DVD: `data/DOCUMENTS/`)
-  3. MoSPI. *Sixth Economic Census 2012-13 microdata*, National Data Archive, https://microdata.gov.in/NADA/index.php/catalog/47
-  4. Cochran, W. G. (2008). *Sampling Techniques*, 3rd ed. Wiley.
-  5. Gupta, S. C. and Kapoor, V. K. (2018). *Fundamentals of Applied Statistics*, 4th ed. Sultan Chand.
-- **Annexure:** the dataset (`data/frame_karnataka.rds`, or a description and the link above, since 2.9 million rows cannot be printed), the selected samples (each `output/*/samples/` folder), and the R code (`analysis/`).
+The group report is built automatically: `Rscript analysis/08_group_report.R` writes **Sampling_Techniques_Group_Report.pdf** in the project root and checks it against the assignment's report format and marking scheme ([reports/rubric_check.md](../reports/rubric_check.md)). What it contains, so you can answer questions about it:
+
+- **Page 1:** title, and every member's name, register number and role (the assignment asks for roles on the first page).
+- **Sections, in the required order:** Introduction, Population and Frame, Method-wise Analysis (Units 1-4), Comparison and Interpretation, Errors, Official Statistics Link, Conclusion, References. Each section names who prepared it.
+- **Length:** 15-20 pages without the annexure (the build checks this).
+- **References:** 8, of which 4 are official MoSPI sources (at least 3 and 2 are required).
+- **Annexure:** A, the dataset (description, frame columns, the 67 verification checks); B, the sample units selected under each method (first ten of each, the 27 clusters in full; complete lists in `output/*/samples/`); C, the R work (script list and the estimator code).
+
+If anything in the results changes, re-run `Rscript analysis/run_all.R`: the report, slides and rubric check are all rebuilt from the new numbers.
