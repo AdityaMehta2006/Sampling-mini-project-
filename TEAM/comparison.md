@@ -147,7 +147,7 @@ A: Neyman-allocated stratified sampling (RE 1.17). Even better would be strata b
 
 ## 9. Compiling the report
 
-The group report is built automatically: `Rscript analysis/08_group_report.R` writes **Sampling_Techniques_Group_Report.pdf** in the project root and checks it against the assignment's report format and marking scheme ([reports/rubric_check.md](../reports/rubric_check.md)). What it contains, so you can answer questions about it:
+The group report is built automatically: `Rscript analysis/08_group_report.R` writes **group_report.pdf** in the project root and checks it against the assignment's report format and marking scheme ([reports/rubric_check.md](../reports/rubric_check.md)). What it contains, so you can answer questions about it:
 
 - **Page 1:** title, and every member's name, register number and role (the assignment asks for roles on the first page).
 - **Sections, in the required order:** Introduction, Population and Frame, Method-wise Analysis (Units 1-4), Comparison and Interpretation, Errors, Official Statistics Link, Conclusion, References. Each section names who prepared it.

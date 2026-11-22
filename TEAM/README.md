@@ -12,7 +12,7 @@ Each person has one note in this folder. Read this page first, then your own not
 
 ## The group report
 
-**[Sampling_Techniques_Group_Report.pdf](../Sampling_Techniques_Group_Report.pdf)** (project root) is the one report the assignment asks for. It has every member's name, register number and role on page 1, the required sections in order, and each section names who prepared it. `analysis/08_group_report.R` builds it from the verified results and checks it against the rubric; the result is in [reports/rubric_check.md](../reports/rubric_check.md).
+**[group_report.pdf](../group_report.pdf)** (project root) is the one report the assignment asks for. It has every member's name, register number and role on page 1, the required sections in order, and each section names who prepared it. `analysis/08_group_report.R` builds it from the verified results and checks it against the rubric; the result is in [reports/rubric_check.md](../reports/rubric_check.md).
 
 ## Your individual report
 

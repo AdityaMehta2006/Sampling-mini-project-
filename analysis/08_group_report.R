@@ -10,7 +10,7 @@
 # rubric (page limit, sections, references, annexure, roles on page 1).
 #
 # Needs: pdflatex (cover), Google Chrome/Chromium (body), qpdf (merge).
-# Output: Sampling_Techniques_Group_Report.pdf (project root) and reports/rubric_check.md
+# Output: group_report.pdf (project root) and reports/rubric_check.md
 # =============================================================================
 source("analysis/summary_values.R")
 
@@ -23,7 +23,7 @@ ROOT <- normalizePath(".")
 BUILD <- file.path(tempdir(), "group_report")
 dir.create(BUILD, showWarnings = FALSE)
 dir.create("reports", showWarnings = FALSE)
-OUT_PDF <- "Sampling_Techniques_Group_Report.pdf"
+OUT_PDF <- "group_report.pdf"
 
 pp <- load_shared("population")
 srs <- load_shared("srs")
