@@ -251,7 +251,7 @@
   <div class="body">
     <div class="col">
       <ul>
-        <li>List ordered by location code; every {{k}}th establishment from r = {{sys_r}}.</li>
+        <li>List ordered by location code; one establishment in every {{k}}, starting from r = {{sys_r}}.</li>
         <li>Our sample: mean <b>{{sys_mean}}</b> (SE {{sys_mean_se}}), P <b>{{sys_p}}</b> (SE {{sys_p_se}}).</li>
         <li>Average of all {{k}} sample means = true value exactly, so the estimator is <b>unbiased</b>.</li>
         <li>CIs containing the truth: <b>{{sys_cover_mean}}%</b> for the mean, <b>{{sys_cover_p}}%</b> for P.</li>
@@ -419,7 +419,7 @@
     <div class="col">
       <ul>
         <li><b>Precision:</b> best for P (RE {{cmp_re_best_p}}), as good as SRS for the mean (RE {{cmp_re_sys_mean}}).</li>
-        <li><b>Cost:</b> one random number, then every {{k}}th establishment.</li>
+        <li><b>Cost:</b> one random number, then one establishment in every {{k}}.</li>
         <li><b>Convenience:</b> automatically spread over every district.</li>
         <li>If the mean matters most: Neyman stratified. Cluster: cheapest, least precise (RE {{cmp_re_cl_p}} for P).</li>
       </ul>
